@@ -74,7 +74,7 @@ Magnetic field as perturbation on band structure.
 ARPES
 --------
 
-Measuring the _energy_ and _direction_ of an electron when the surface is hit by a monochrome beam, whence we may obtain :math:`E_n(\vb{k})`.
+Measuring the *energy* and *direction* of an electron when the surface is hit by a monochrome beam, whence we may obtain :math:`E_n(\vb{k})`.
 
 Conservation Laws
 ^^^^^^^^^^^^^^^^^^^^
@@ -142,6 +142,6 @@ Glossary
 References
 -------------
 
-.. [Coldea2010] https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2010.0089
+.. [Coldea2010] `Quantum oscillations probe the normal electronic states of novel superconductors <https://royalsocietypublishing.org/doi/abs/10.1098/rsta.2010.0089>`_
 
 
