@@ -13,4 +13,4 @@ Contents
 .. toctree::
 
    visualizing-the-fermi-surface
-   basic-theory-of-topological-insulators
+   basic-theory
