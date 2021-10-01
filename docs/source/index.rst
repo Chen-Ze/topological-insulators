@@ -1,22 +1,16 @@
-Welcome to Lumache's documentation!
+Welcome to Topological Insulator!
 ===================================
 
-**Lumache** (/lu'make/) is a Python library for cooks and food lovers
-that creates recipes mixing random ingredients.
-It pulls data from the `Open Food Facts database <https://world.openfoodfacts.org/>`_
-and offers a *simple* and *intuitive* API.
-
-Check out the :doc:`usage` section for further information, including
-how to :ref:`installation` the project.
+Notes on topological insulators.
 
 .. note::
 
-   This project is under active development.
+   This note is yet to be finished.
 
 Contents
 --------
 
 .. toctree::
 
-   usage
-   api
+   visualizing-the-fermi-surface
+   basic-theory-of-topological-insulators

@@ -1,9 +1,6 @@
-Template for the Read the Docs tutorial
+Topological Insulators
 =======================================
 
-This GitHub template includes fictional Python library
-with some basic Sphinx docs.
+My notes on topological insulators.
 
-Read the tutorial here:
-
-https://docs.readthedocs.io/en/stable/tutorial/
+https://topological-insulators.readthedocs.io/en/latest
