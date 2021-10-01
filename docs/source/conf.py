@@ -2,9 +2,9 @@
 
 # -- Project information
 
-project = 'Lumache'
-copyright = '2021, Graziella'
-author = 'Graziella'
+project = 'Topological Insulator'
+copyright = '2021, Chen Ze'
+author = 'Chen Ze'
 
 release = '0.1'
 version = '0.1.0'
