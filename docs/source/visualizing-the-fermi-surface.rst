@@ -12,55 +12,47 @@ Laudau Quantization
 Strong magnetic field
 """"""""""""""""""""""
 
-Band structure as perturbation on Landau levels.
+* Band structure as perturbation on Landau levels.
+* Landau gauge:
 
-Landau gauge:
+  .. math::
+      \vb{A} = (0, Bx, 0).
+* Hamiltonian:
+* 
+  .. math::
+      H(p_x, p_y) &= \frac{1}{2m} \qty(\vb{p} - \frac{e}{c} \vb{A})^2 \\
+      &= \frac{1}{2m}\qty[p_x^2 + \qty(p_y - \frac{e}{c} Bx)^2]. \\
+      H(p_x, \hbar k_y) &= \frac{1}{2m} p_x^2 + \frac{m\omega_c^2}{2}(x-X)^2.
+  where
 
-.. math::
-    \vb{A} = (0, Bx, 0).
+  .. math::
+      p_y &= \hbar k_y, \\
+      \omega_c &= \frac{eB}{mc}, \\
+      l_B &= \sqrt{\frac{\hbar c}{eB}}, \\
+      X &= \frac{\hbar c k_y}{eB} = l_B^2 k_y.
+* Solution:
 
+  .. math::
+      \psi_{k_y, n}(x, y) = \frac{1}{\sqrt{L_y}} e^{ik_y y} \phi_{k_y, n}(x)
+  where
 
-Hamiltonian:
+  .. math::
+      \phi_{k_y, n}(x) \propto e^{-\frac{1}{2} (x/l_B)^2} H_n\qty(\frac{x - X}{l_B}).
+* Energy levels:
 
-.. math::
-    H(p_x, p_y) &= \frac{1}{2m} \qty(\vb{p} - \frac{e}{c} \vb{A})^2 \\
-    &= \frac{1}{2m}\qty[p_x^2 + \qty(p_y - \frac{e}{c} Bx)^2]. \\
-    H(p_x, \hbar k_y) &= \frac{1}{2m} p_x^2 + \frac{m\omega_c^2}{2}(x-X)^2.
-where
+  .. math::
+      E_n = \hbar \omega_c\qty(n+\frac{1}{2}).
+* Degeneracy: number of states at each level,
+  
+  .. math::
+      m_{\mathrm{max}} = \frac{L_x L_y}{2\pi l_B^2}.
 
-.. math::
-    p_y &= \hbar k_y, \\
-    \omega_c &= \frac{eB}{mc}, \\
-    l_B &= \sqrt{\frac{\hbar c}{eB}}, \\
-    X &= \frac{\hbar c k_y}{eB} = l_B^2 k_y.
+  .. note::
+      Stronger the magnetic field, higher the degree of degeneracy.
+* Filling factor:
 
-Solution:
-
-.. math::
-    \psi_{k_y, n}(x, y) = \frac{1}{\sqrt{L_y}} e^{ik_y y} \phi_{k_y, n}(x)
-
-where
-
-.. math::
-    \phi_{k_y, n}(x) \propto e^{-\frac{1}{2} (x/l_B)^2} H_n\qty(\frac{x - X}{l_B}).
-
-Energy levels:
-
-.. math::
-    E_n = \hbar \omega_c\qty(n+\frac{1}{2}).
-
-Degeneracy: number of states at each level:
-
-.. math::
-    m_{\mathrm{max}} = \frac{L_x L_y}{2\pi l_B^2}.
-
-.. note::
-    Stronger the magnetic field, higher the degree of degeneracy.
-
-Filling factor:
-
-.. math::
-    \nu = \frac{N_{\mathrm{e}}}{m_{\mathrm{max}}} = 2\pi l_B^2 \frac{N_{\mathrm{e}}}{L_x L_y}.
+  .. math::
+      \nu = \frac{N_{\mathrm{e}}}{m_{\mathrm{max}}} = 2\pi l_B^2 \frac{N_{\mathrm{e}}}{L_x L_y}.
 
 
 Weak magnetic field
@@ -70,6 +62,56 @@ Magnetic field as perturbation on band structure.
 
 :math:`k_y` still a good quantum number.
 
+
+Observation of Quantum Oscillation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Classical Theory of Electron Motion
+""""""""""""""""""""""""""""""""""""""""
+
+* :math:`\vb{k}` runs along the constant-energy surface, rotating around :math:`\vb{B}`.
+* With :math:`\vb{r}_\perp` denoting the component of :math:`\vb{r}` perpendicular to :math:`\vb{B}`, we have
+
+  .. math::
+      \vb{r}_\perp(t) - \vb{r}_\perp(0) = -\frac{\hbar c}{eB} \hat{\vb{B}} \times \qty[\vb{k}(t) - \vb{k}(0)].
+  .. note::
+      The orbit in the :math:`\vb{r}` space is given by the orbit in the :math:`\vb{k}` space rotated by :math:`\pi/2` and scaled by :math:`\dfrac{\hbar c}{eB}`.
+* Period:
+
+  .. math::
+      T = \frac{\hbar^2 c}{eB} \pdv{A(E,k_z)}{E} = \frac{2\pi m_{\mathrm{c}} c}{eB}.
+  * :math:`A` is the area encicled by the orbit.
+  * Cyclotron mass:
+
+    .. math::
+        m_{\mathrm{c}} = \frac{\hbar^2}{2\pi} \pdv{A(E,k_z)}{E}.
+* With Bohr's correspondence principle, we find that the Landau levels for large :math:`\nu`'s are given by the Onsager's semiclassical quantization condition
+  
+  .. math::
+      A(E_\nu, k_z) = \qty(\nu + \frac{1}{2} - \beta) \frac{2\pi eB}{\hbar c},
+  where :math:`\beta = 0` for free electrons.
+* Maximal number of states thereon when the outest Landau tube is tangent to the Fermi surface. At two consecutive extrema, one has
+  
+  .. math::
+      A(E_{\mathrm{F}}) &= A(E_{\nu}, k^0_z) = \qty(\nu + \frac{1}{2} - \beta) \frac{2\pi e B_\nu}{\hbar c}, \\
+      A(E_{\mathrm{F}}) &= A(E_{\nu - 1}, k^0_z) = \qty(\nu - 1 + \frac{1}{2} - \beta) \frac{2\pi e B_{\nu - 1}}{\hbar c},
+  respectively, where :math:`A(E_{\mathrm{F}})` denotes the area encircled by an extremal orbit. Therefore, such exterma occurs periodically with
+
+  .. math::
+      \Delta \qty(\frac{1}{B}) = \frac{2\pi e}{\hbar c A(E_{\mathrm{F}})}.
+
+.. note::
+    We may therefore obtain the area encircled by the extremal orbits of the Fermi surface from the observed :math:`\Delta \qty(1/B)`.
+  
+
+Phenomena
+""""""""""""
+
+* De Haas-van Alphen oscillation: :math:`\chi` versus :math:`1/B`.
+* Shubnikov-de Haas oscillation: resistivity versus :math:`1/B`.
+
+.. warning::
+    As :math:`T` goes up, the Fermi surface is Blurred by :math:`O(k_{\mathrm{B}}T)` which may exceed :math:`\Delta E`, which may therefore suppress quantum oscillation.
 
 ARPES
 --------
