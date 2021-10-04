@@ -3,7 +3,7 @@ Welcome to Topological Insulator!
 
 Notes on topological insulators.
 
-.. note::
+.. hint::
 
    This note is yet to be finished.
 
@@ -12,5 +12,7 @@ Contents
 
 .. toctree::
 
+   prerequisites
    visualizing-the-fermi-surface
    basic-theory
+   models

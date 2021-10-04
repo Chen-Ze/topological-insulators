@@ -94,6 +94,75 @@ Hall Conductance: TKNN Derivation
     i.e. the winding number of Berry phase along the boundary of BZ.
   * :math:`\nu \in \mathbb{Z}`.
 
+.. note::
+    TKNN number may be also called Chern number.
+
+Hall Conductance: Kubo Derivation
+""""""""""""""""""""""""""""""""""""""
+
+.. hint::
+    Under construction.
+
+Hall Conductance: Laughlin Argument
+""""""""""""""""""""""""""""""""""""""
+
+.. hint::
+    Under construction.
+
+Example: Two-Band Model
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Brillouin zone: :math:`\vb{k} \in T^2`.
+* Parameter space: :math:`\vb{h} \in \mathbb{R}^3`. We assume that :math:`\vb{h}(\vb{k}) \neq 0` so that we have a two-band insulator.
+
+  * :math:`\vb{h}(\vb{k})` sweeps a closed surface in :math:`\mathbb{R}^3`.
+  * Magnetic monopole analogy: we are going to calculate the magnetic flux through this closed surface.
+  * We may forget everything about :math:`\vb{k}` now and take :math:`\vb{h}` as :math:`\vb{R}` in the above derivation of Berry phase.
+* Hamiltonian: magnetic dipole,
+
+  .. math::
+      H(\vb{k}) = \vb{h}(\vb{k}) \cdot \vb{\sigma}.
+* Ket space: :math:`\ket{u} \in \mathbb{C}^2`. More specifically, :math:`S^2`.
+* Dispersion relation:
+
+  .. math::
+      \epsilon_{\pm}(\vb{k}) = \pm h(\vb{k}) = \pm \abs{\vb{h}(\vb{k})}.
+* Ket solution: assuming filling only the lower band,
+
+  * For :math:`\vb{h}` lying on the southern hemisphere,
+
+    .. math::
+        \ket{u_-^{\mathrm{S}}[\vb{h}(\vb{k})]} = \begin{pmatrix} \sin \frac{\theta}{2} \\ -e^{i\phi} \cos \frac{\theta}{2} \end{pmatrix}.
+  * For :math:`\vb{h}` lying on the northern hemisphere,
+
+    .. math::
+        \ket{u_-^{\mathrm{S}}[\vb{h}(\vb{k})]} = \begin{pmatrix} e^{-i\phi} \sin \frac{\theta}{2} \\ -\cos \frac{\theta}{2} \end{pmatrix}.
+  * The kets are unimportant by themselves. We want only the Berry connection.
+* Berry connection:
+
+  * For :math:`\vb{h}` lying on the southern hemisphere,
+
+    .. math::
+        \vb{A}^{\mathrm{S}}_-(\vb{h}) = \frac{1}{2}(1+\cos\theta) \dd{\phi}.
+  * For :math:`\vb{h}` lying on the northern hemisphere,
+
+    .. math::
+        \vb{A}^{\mathrm{N}}_-(\vb{h}) = -\frac{1}{2}(1-\cos\theta) \dd{\phi}.
+  * Magnetic monopole analogy: vector potential of a magnetic dipole at the origin.
+  * We can't have an :math:`\vb{A}` covering the whole space. We have to either discard the :math:`z` axis or the equator. Here we chose the latter.
+  * Gauge transformation on the equator:
+
+    .. math::
+        \vb{A}^{\mathrm{N}}_-(\vb{h}) = \vb{A}^{\mathrm{S}}_-(\vb{h}) - \dd{\phi}.
+* TKNN number:
+
+  .. math::
+      \nu = \frac{1}{2\pi} \int \dd{\vb{A}}
+  counts how many times the closed surface encircles the origin.
+
+  * Topologically trivial: :math:`\nu = 0` if the surface does not encircle the origin.
+  * Topologically nontrivial: :math:`\nu \neq 0` if the surface does encircle the origin.
+
 Glossary
 -----------
 
