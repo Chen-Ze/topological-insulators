@@ -39,7 +39,7 @@ QHE
 .. raw:: html
 
     <video style="width: 100%; max-width: 360px;" class="block-center" controls>
-        <source src="http://zechen.site/scribble-files/ddb6aade-7629-4c9b-9648-1b6eda1a1b77/QuantumHallEffectExplanationWithLandauLevels.ogv" type="video/ogg">
+        <source src="https://zchen.xyz/QuantumHallEffectExplanationWithLandauLevels.ogv" type="video/ogg">
         Your browser does not support the video tag.
     </video>
 
