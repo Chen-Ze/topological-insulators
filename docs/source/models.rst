@@ -12,7 +12,7 @@ Index of Models (Diagonalizable)
      - Dimension
      - TRS
      - Examples
-   * - Haldane Model
+   * - Haldane Model [Haldane1988]_
      - QAHE
      - 2
      - Broken
@@ -33,9 +33,10 @@ Index of Models (Strongly Correlated)
      - Mott Insulator
      - Any
      - Preserved
-     - ...
+     - Too many
 
 References
 -------------
 
 .. [Yu2010] `Quantized Anomalous Hall Effect in Magnetic Topological Insulators <https://arxiv.org/abs/1002.0946>`_
+.. [Haldane1988] `Model for a Quantum Hall Effect without Landau Levels: Condensed-Matter Realization of the "Parity Anomaly" <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.61.2015>`
