@@ -33,23 +33,6 @@ Index of Models (Diagonalizable)
      - Broken
      - Not yet found [Yu2010]_
 
-Index of Models (Strongly Correlated)
----------------------------------------
-
-.. list-table:: Index of Models
-   :header-rows: 1
-
-   * - Name
-     - Applications
-     - Dimension
-     - TRS
-     - Examples
-   * - Hubbard Model
-     - Mott Insulator
-     - Any
-     - Preserved
-     - Too many
-
 Thouless Charge Pump (Rice-Mele Model)
 ----------------------------------------
 
