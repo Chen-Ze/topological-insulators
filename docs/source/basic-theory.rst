@@ -113,8 +113,24 @@ Hall Conductance: Kubo Derivation
 Hall Conductance: Laughlin Argument
 """"""""""""""""""""""""""""""""""""""
 
-.. hint::
-    Under construction.
+See `Laughlin 规范实验 - 泰勒猫爱丽丝的文章 - 知乎 <https://zhuanlan.zhihu.com/p/370033031>`_.
+
+The following is the simplified version [Shen2012]_.
+
+* Two-dimensional electron gas rolled as a cylinder along the :math:`y`-direction, i.e. :math:`y` now becomes :math:`S^1`.
+* A magnetic flux :math:`\phi` now threads through the :math:`x`-direction.
+* Charge transport as magnetic flux increases:
+
+  .. math::
+      \Delta Q = \sigma_{xy} \Delta \Phi.
+* Quantization of magnetic flux:
+
+  .. math::
+      \Delta \Phi = \frac{h}{e}.
+* Gauge invariance: kets returns to their original states as magnetic flux is increased by a magnetic flux quantum. Therefore, a integer number of charge is transported.
+
+  .. math::
+      \sigma_{xy} = \frac{n e^2}{h}.
 
 Example: A Two-Band Model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -184,3 +200,8 @@ Glossary
 .. glossary::
     QHE/量子ホール効果/量子霍尔效应
         A quantized version of the Hall effect which is observed in two-dimensional electron systems subjected to low temperatures and strong magnetic fields, in which the Hall resistance exhibits steps that take on the quantized values.
+
+References
+-------------
+
+.. [Shen2012] `Topological Insulators <https://link.springer.com/book/10.1007/978-3-642-32858-9>`_

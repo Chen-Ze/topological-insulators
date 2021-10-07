@@ -41,6 +41,7 @@ Time Reversal
       .. math::
           \Theta^2 c_{ja\uparrow} \Theta^{-2} = c_{ja\uparrow}.
       However, this is exact what we want because :math:`\Theta^2` and :math:`\Theta^{-2}` acts on Hilbert spaces of different particle numbers, and therefore have different values.
+* Ferromagnetism and antiferromagnetism breaks TRS. See `反铁磁到底有没有破缺时间反演对称性，为什么很多狄拉克材料具有反铁磁性如SrMnSb2等？ - 方辰的回答 - 知乎 <https://www.zhihu.com/question/264292959/answer/282884572>`_.
 
 Glossary
 ----------
