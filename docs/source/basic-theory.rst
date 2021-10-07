@@ -1,6 +1,12 @@
 Basic Theory of Topological Insulators
 ==========================================
 
+.. role:: text-muted
+
+.. rst-class:: text-right text-muted
+
+    とあるトポロジカルインデックス
+
 Berry Phase
 ----------------
 
@@ -31,10 +37,11 @@ Berry Phase
     .. math::
         \vb{B}_n(\vb{R}) = \nabla_{\vb{R}} \times \vb{A}_n(\vb{R}).
 
-QHE
+QHE: Chern Number and Conductivity
 --------
 
 .. image:: https://badgen.net/badge/TRS/broken/red
+.. image:: https://badgen.net/badge/Dimension/2D/purple
 
 .. raw:: html
 
@@ -109,7 +116,7 @@ Hall Conductance: Laughlin Argument
 .. hint::
     Under construction.
 
-Example: Two-Band Model
+Example: A Two-Band Model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 * Brillouin zone: :math:`\vb{k} \in T^2`.
@@ -162,6 +169,14 @@ Example: Two-Band Model
 
   * Topologically trivial: :math:`\nu = 0` if the surface does not encircle the origin.
   * Topologically nontrivial: :math:`\nu \neq 0` if the surface does encircle the origin.
+
+Pump: ℤ₂ Index and Polarization
+-------------------------------------
+
+.. image:: https://badgen.net/badge/TRS/partial/yellow
+.. image:: https://badgen.net/badge/Dimension/1+1D/purple
+
+
 
 Glossary
 -----------

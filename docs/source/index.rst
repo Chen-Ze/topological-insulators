@@ -16,3 +16,4 @@ Contents
    visualizing-the-fermi-surface
    basic-theory
    models
+   thouless-pump.ipynb
