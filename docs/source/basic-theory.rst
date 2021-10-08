@@ -17,7 +17,7 @@ Berry Phase
 * Time evolution of ket as :math:`\vb{R}(t)` varies with time.
 
   .. math::
-      \ket{n,t} = \exp\qty(i \gamma_n) \times \exp\qty({-\frac{i}{\hbar} \dd{t'} E_n[\vb{R}(t')]}) \ket{n,\vb{R}(t)}.
+      \ket{n,t} = \exp\qty(i \gamma_n) \times \exp\qty({-\frac{i}{\hbar} \int \dd{t'} E_n[\vb{R}(t')]}) \ket{n,\vb{R}(t)}.
   * The first :math:`\exp` factor is known as the Berry phase term.
   * The second :math:`\exp` factor is known as the dynamical term.
   .. note::
