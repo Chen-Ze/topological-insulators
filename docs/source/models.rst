@@ -46,7 +46,7 @@ Index of Models (Diagonalizable)
      - 2
      - Preserved
      - Preserved
-     - HgTe Quantum Well
+     - HgTe Quantum Well [König2007]_
 
 Thouless Charge Pump (Rice-Mele Model)
 ----------------------------------------
@@ -270,3 +270,4 @@ References
 .. [Fu2006] `Time reversal polarization and a Z2 adiabatic spin pump <https://journals.aps.org/prb/abstract/10.1103/PhysRevB.74.195312>`_
 .. [Su1979] `Solitons in Polyacetylene <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.42.1698>`_
 .. [Bernevig2006] `Quantum Spin Hall Effect and Topological Phase Transition in HgTe Quantum Wells <https://www.science.org/doi/abs/10.1126/science.1133734>`_
+.. [König2007] `Quantum Spin Hall Insulator State in HgTe Quantum Wells <https://www.science.org/doi/abs/10.1126/science.1148047>`_
