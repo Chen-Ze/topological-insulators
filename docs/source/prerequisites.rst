@@ -28,6 +28,9 @@ Time Reversal
 
     .. math::
         E_{n,\uparrow}(\vb{k}) = E_{n,\downarrow}(\vb{k}).
+
+  .. note::
+      TRS guarantees two-fold degeneracy at TRIMs. The degeneracy pairs are given by Kramers pairs.
 * Commutation relations: [Bernivig2013]_
 
   .. math::
@@ -42,6 +45,14 @@ Time Reversal
           \Theta^2 c_{ja\uparrow} \Theta^{-2} = c_{ja\uparrow}.
       However, this is exact what we want because :math:`\Theta^2` and :math:`\Theta^{-2}` acts on Hilbert spaces of different particle numbers, and therefore have different values.
 * Ferromagnetism and antiferromagnetism breaks TRS. See `反铁磁到底有没有破缺时间反演对称性，为什么很多狄拉克材料具有反铁磁性如SrMnSb2等？ - 方辰的回答 - 知乎 <https://www.zhihu.com/question/264292959/answer/282884572>`_.
+
+Topology
+-----------
+
+* Pfaffian: for an anti-symmetric matrix :math:`A`,
+  
+  .. math::
+      \operatorname{Pf}[A]^2 = \det[A].
 
 Glossary
 ----------

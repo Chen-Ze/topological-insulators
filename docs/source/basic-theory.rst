@@ -132,6 +132,14 @@ The following is the simplified version [Shen2012]_.
   .. math::
       \sigma_{xy} = \frac{n e^2}{h}.
 
+Hall Conductance: Wilson Loop Derivation
+""""""""""""""""""""""""""""""""""""""""""
+
+See `霍尔电导率 via Wilson Loop - PhakeNews的文章 - 知乎 <https://zhuanlan.zhihu.com/p/34715681>`_.
+
+.. hint::
+    Under construction.
+
 Example: A Two-Band Model
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -192,7 +200,227 @@ Pump: ℤ₂ Index and Polarization
 .. image:: https://badgen.net/badge/TRS/partial/yellow
 .. image:: https://badgen.net/badge/Dimension/1+1D/purple
 
+Polarization and Time-Reversal Polarization
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+* We define
+  
+  .. math::
+      w_{\alpha\beta}(\vb{k}) = \bra{u_{\alpha,-\vb{k}}} \Theta \ket{u_{\beta,\vb{k}}},
+  where :math:`\alpha` and :math:`\beta` are indices of bands.
+
+  * :math:`w` relates time-reversal pairs.
+  
+    .. math::
+        \ket{u_{\alpha,-\vb{k}}} = \sum_{\beta} w^*_{\alpha\beta}(\vb{k}) \Theta \ket{u_{\beta,\vb{k}}}.
+
+  * :math:`w` is unitary.
+  
+    .. math::
+        \sum_{\alpha} w^\dagger_{\gamma\alpha}(\vb{k}) w_{\alpha\beta}(\vb{k}) = \delta_{\beta\gamma}.
+
+  * :math:`w` satisfies
+  
+    .. math::
+        w_{\beta\alpha}(-\vb{k}) = -w_{\alpha\beta}(\vb{k}).
+
+  * :math:`w` is antisymmetric at TRIMs.
+
+    .. math::
+        w_{\beta\alpha}(-\vb{\Lambda}) = -w_{\alpha\beta}(\vb{\Lambda}).
+* Berry connection matrix
+  
+  .. math::
+      \vb{a}_{\alpha\beta}(\vb{k}) = -i \bra{u_{\alpha,\vb{k}}} \nabla_{\vb{k}} \ket{u_{\beta,\vb{k}}}.
+  
+  * :math:`\vb{a}` at time-reversal momentum pairs:
+    
+    .. math::
+      \vb{a}(-\vb{k}) &= w(\vb{k}) \vb{a}^*(\vb{k}) w^\dagger(\vb{k}) + iw(\vb{k}) \nabla_{\vb{k}} w^\dagger(\vb{k}), \\
+      \tr[\vb{a}(\vb{k})] &= \tr[\vb{a}(-\vb{k})] + i\tr[w^\dagger(\vb{k}) \nabla_{\vb{k}} w(\vb{k})].
+      :label: eq_a_time_reversal_w
+* Wannier function: of a certain band,
+  
+  .. math::
+      \ket{R} = \sum_{k=-\pi}^\pi \frac{e^{ik(x-R)}}{\sqrt{L}} \ket{u_k}.
+* Polarization: of a certain band,
+  
+  .. math::
+      P_\rho = -\bra{R=0} x \ket{R=0}.
+
+  * Polarization given by Berry connection:
+    
+    .. math::
+        P_\rho = -\frac{1}{L} \sum_{k=-\pi}^\pi \bra{u_k} i\pdv{}{k} \ket{u_k} = \int_{-\pi}^\pi \frac{\dd{k}}{2\pi} a(k).
+* Time-Reversal Polarization: of a time-reversal pair,
+  
+  .. math::
+      P_\theta = P_1 - P_2 = 2P_1 - P_\rho,
+  where
+
+  .. math::
+      P_i &= \int_{-\pi}^\pi \frac{\dd{k}}{2\pi} a_{ii(k)}, \\
+      P_\rho &= P_1 + P_2.
+
+Spin Pump: ℤ₂ Index and Time-Reversal Polarization
+""""""""""""""""""""""""""""""""""""""""""""""
+
+* The Hamiltonian satisfies
+  
+  .. math::
+      H[t + T] &= H[T], \\
+      H[-t] &= \Theta H[t] \Theta^{-1}.
+* At :math:`t=0` and :math:`t=T/2`, the Hamiltonian is time-reversal invariant. Therefore,
+
+  .. math::
+      \Theta \ket{u_2(k)} &= e^{-i\chi(k)} \ket{u_1(-k)}, \\
+      \Theta \ket{u_1(k)} &= -e^{-i\chi(-k)} \ket{u_2(-k)}. \\
+      w(k) &= \begin{pmatrix} 0 & e^{-i\chi(k)} \\ -e^{-i\chi(-k)} & 0 \end{pmatrix}, \\
+      a_{11}(-k) &= a_{22}(k) - \pdv{}{k} \chi(k).
+
+  .. note::
+      The relation between :math:`a_{11}` and :math:`a_{22}` does not hold if TRS is broken.
+* Time-reversal polarization: with :eq:`eq_a_time_reversal_w`,
+  
+  .. math::
+      P_\theta &= \int_{0}^{\pi} \frac{\dd{k}}{2\pi} [A(k) - A(-k)] - \frac{i}{\pi} \log \frac{w_{12}(\pi)}{w_{12}(0)} \\
+      &= \frac{i}{\pi} \cdot \frac{1}{2} \log \frac{\det[w(\pi)]}{\det[w(0)]} - \frac{i}{\pi} \log \frac{w_{12}(\pi)}{w_{12}(0)} \\
+      &= \frac{1}{i\pi} \log \qty(\frac{\sqrt{w_{12}(0)^2}}{w_{12}(0)} \cdot \frac{w_{12}(\pi)}{\sqrt{w_{12}(\pi)^2}}).
+* Spin transport in a half-period:
+
+  .. math::
+      \Delta = \abs{P_\theta(T/2) - P_\theta(0)}.
+
+  * :math:`\Delta` as :math:`\mathbb{Z}_2` index:
+    
+    .. math::
+        (-1)^\Delta = \prod_{i=1}^4 \frac{w_{12}(\Lambda_i)}{\sqrt{w_{12}(\Lambda_i)^2}},
+
+    where :math:`\Lambda_i` are TRIMs (:math:`T` plays the role of :math:`k_y` here since they are both :math:`S^1`)
+
+    .. math::
+        \Lambda_1 &= (k=0, t=0), \\
+        \Lambda_2 &= (k=\pi, t=0), \\
+        \Lambda_3 &= (k=0, t=T/2), \\
+        \Lambda_4 &= (k=\pi, t=T/2).
+    
+    .. note::
+      :math:`\Delta \neq 0` indicates that the system is topologically nontrivial. The Kramers pair at :math:`t=0` and :math:`t=T/2` are given by different electron pairs.
+* :math:`\mathbb{Z}_2` index of multi-band systems:
+  
+  .. math::
+      (-1)^\nu = \prod_{i=1}^4 \frac{\operatorname{Pf}[w(\Lambda_i)]}{\sqrt{\det[w(\Lambda_i)]}}.
+
+Three-Dimensional Topological Insulators With Time-Reversal Invariance: ℤ₂ Index and Edge States
+------------------------------------------------------------------------------------------------------
+
+Three-Dimensional ℤ₂ Index
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. rst-class:: text-muted
+
+    I could tell if it is a TI with these 4 bits.
+
+* The :math:`\mathbb{Z}_2` index of three-dimensional topological insulators are denoted as
+  
+  .. math::
+      (\nu_0; \nu_1 \nu_2 \nu_3),
+
+  where
+
+  .. math::
+      (-1)^{\nu_0} &= \prod_{n_j = 0,\pi} \delta(\Lambda_{n_1, n_2, n_3}), \\
+      (-1)^{\nu_i} &= \prod_{\substack{n_i = \pi \\ n_{j\neq i} = 0}} \delta(\Lambda_{n_1, n_2, n_3}), \\
+      \delta(\Lambda_i) &= \frac{\operatorname{Pf}[w(\Lambda_i)]}{\sqrt{\det[w(\Lambda_i)]}}.
+* The index :math:`\nu_z` equals to the :math:`\mathbb{Z}_2` index of the two-dimensional system on :math:`k_z = \pi`.
+
+  * In this two-dimensional subsystem, we may let :math:`k_y` play the role of :math:`t` in the spin pump.
+  * If :math:`\nu_z \neq 0`, there is a recombination of Kramers pairs as we move from :math:`k_y = 0` to :math:`k_y = \pi`.
+  * Such recombination guarantees the existence of surface states.
+* Strong TI: :math:`\nu_0 = 1`.
+* Weak TI: :math:`\nu_0 = 0` while :math:`\nu_i = 1` for some :math:`i`.
+
+Inversion Symmetry
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. rst-class:: text-muted
+
+    Keeping track of complex phases? That's too complex!
+
+* Define
+
+  .. math::
+      \vb{a}^c(\vb{k}) = \tr [\vb{a}(\vb{k})] \in \mathbb{R}^3.
+
+* Berry curvature:
+
+  .. math::
+      F(\vb{k}) = \nabla_{\vb{k}} \times \vb{a}^c(\vb{k}).
+
+  * Berry curvature with symmetry:
+  
+    .. math::
+        \mathrm{TRS} &\Rightarrow F(-\vb{k}) = -F(\vb{k}), \\
+        \mathrm{Inversion\ Symmetry} &\Rightarrow F(-\vb{k}) = +F(\vb{k}).
+
+  * When both TRS and inversion symmetry are present,
+    
+    .. math::
+        F(\vb{k}) \equiv 0
+    and therefore there exists a gauge such that
+
+    .. math::
+        \vb{a}(\vb{k}) = 0.
+
+* We define
+  
+  .. math::
+      v_{\alpha\beta}(\vb{k}) = \bra{u_{\alpha,\vb{k}}} \Pi \Theta \ket{u_{\beta,\vb{k}}},
+  where :math:`\alpha` and :math:`\beta` are indices of bands.
+
+  * :math:`w` is unitary.
+  
+    .. math::
+        \sum_{\alpha} v^\dagger_{\gamma\alpha}(\vb{k}) v_{\alpha\beta}(\vb{k}) = \delta_{\beta\gamma}.
+
+  * :math:`v` is anti-symmetric:
+  
+    .. math::
+        v_{\alpha\beta} = -v_{\beta\alpha}.
+
+* :math:`\vb{a}^c` given by :math:`v`:
+
+  .. math::
+      \vb{a}^c(\vb{k}) &= \frac{i}{2} \tr\qty[v^\dagger \nabla_{\vb{k}} v] \\
+      &= i \nabla_{\vb{k}} \log \operatorname{Pf}[v(\vb{k})].
+
+  * Since :math:`\vb{a}^c \equiv 0`, we have
+
+    .. math::
+        \operatorname{Pf}[v(\vb{k})] \equiv 1.
+
+* We extract the parity of occupied states at each TRIM:
+
+  .. math::
+      \Pi \ket{\psi_\alpha(\Lambda_i)} = \xi_\alpha(\Lambda_i) \ket{\psi_\alpha(\Lambda_i)}.
+
+* :math:`w` given by :math:`v`:
+
+  .. math::
+      w_{\alpha\beta}(\Lambda_i) = \xi_\alpha(\Lambda_i) v_{\alpha\beta}(\Lambda_i).
+
+  * Therefore,
+    
+    .. math::
+        \delta(\Lambda_i) = \prod_{n=1}^N \xi_{2n}(\Lambda_i).
+
+* :math:`\mathbb{Z}_2` index given by parity:
+
+  .. math::
+      (-1)^\nu = \prod_{i=1}^4 \prod_{n=1}^N \xi_{2n}(\Lambda_i).
+  
+  .. note::
+      We need an odd number of points of odd parity in the :math:`4N` :math:`\xi_{2n}`'s to have a nontrivial topology.
 
 Glossary
 -----------
