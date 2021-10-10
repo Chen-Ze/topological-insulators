@@ -1,6 +1,10 @@
 Models
 =========
 
+.. rst-class:: text-muted central-inversion
+
+    この軽音部には問題がある！
+
 Index of Models (Diagonalizable)
 -----------------------------------
 
@@ -11,27 +15,38 @@ Index of Models (Diagonalizable)
      - Applications
      - Dimension
      - TRS
+     - Parity
      - Examples
    * - Rice-Mele Model [Rice1982]_
      - `Thouless Charge Pump <./thouless-pump.html>`_
      - 1+1
      - Spinless
      - N/A
+     - N/A
    * - Rice-Mele Model With Spin [Fu2006]_
      - `Fu-Kane Spin Pump <./fu-kane-pump.html>`_
      - 1+1
      - Partial
      - N/A
+     - N/A
    * - Su-Schrieffer-Heeger Model [Su1979]_
      - 1D TI
      - 1
      - Spinless
+     - N/A
      - Polyacetylene
    * - Haldane Model [Haldane1988]_
      - QAHE
      - 2
      - Broken
+     - N/A
      - Not yet found [Yu2010]_
+   * - BHZ Model [Bernevig2006]_
+     - 2D TI
+     - 2
+     - Preserved
+     - Preserved
+     - HgTe Quantum Well
 
 Thouless Charge Pump (Rice-Mele Model)
 ----------------------------------------
@@ -146,6 +161,10 @@ Bernevig-Hughes-Zhang Model
 .. image:: https://badgen.net/badge/P/Preserved/green
 .. image:: https://badgen.net/badge/Dimension/2D/orange
 
+.. rst-class:: text-muted
+
+  Got the trick of calculating :math:`\mathbb{Z}_2` index? Let hunt down a real beast!
+
 * Normal: p orbital below s orbital.
 * Inverted: p orbital above s orbital due to spin-orbit interaction around :math:`\vb{k}=0`. This occurs when the :math:`\ce{HgTe}` sample is thick enough.
 * The four orbitals comes into play:
@@ -250,3 +269,4 @@ References
 .. [Rice1982] `Elementary Excitations of a Linearly Conjugated Diatomic Polymer <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.49.1455>`_
 .. [Fu2006] `Time reversal polarization and a Z2 adiabatic spin pump <https://journals.aps.org/prb/abstract/10.1103/PhysRevB.74.195312>`_
 .. [Su1979] `Solitons in Polyacetylene <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.42.1698>`_
+.. [Bernevig2006] `Quantum Spin Hall Effect and Topological Phase Transition in HgTe Quantum Wells <https://www.science.org/doi/abs/10.1126/science.1133734>`_

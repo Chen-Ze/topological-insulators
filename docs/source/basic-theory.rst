@@ -422,6 +422,17 @@ Inversion Symmetry
   .. note::
       We need an odd number of points of odd parity in the :math:`4N` :math:`\xi_{2n}`'s to have a nontrivial topology.
 
+Remark: Why Does TRS Matter?
+--------------------------------
+
+    『... それ以前は, トポロジカル相の実現には時間反転対称性の破れが必須だと一般に考えられていた...
+
+    そのため,　時間反転対称性を保った絶縁体でも非自明なトポロジーを持ち得るという発見が, それまでの常識を覆すものだった.
+
+    ただ残念なことに, 現実のグラフェンにおいてはスピン軌道相互作用が非常に弱いことがわかっており, Kane-Mele理論の帰結としての量子スピンホル効果を実験的に確認することは困難だった.』
+
+    -- 安藤 陽一
+
 Glossary
 -----------
 
