@@ -13,12 +13,12 @@ Index of Models (Diagonalizable)
      - TRS
      - Examples
    * - Rice-Mele Model [Rice1982]_
-     - `Thouless Charge Pump </thouless-pump>`_
+     - `Thouless Charge Pump <./thouless-pump.html>`_
      - 1+1
      - Spinless
      - N/A
    * - Rice-Mele Model With Spin [Fu2006]_
-     - `Fu-Kane Spin Pump </fu-kane-pump>`_
+     - `Fu-Kane Spin Pump <./fu-kane-pump.html>`_
      - 1+1
      - Partial
      - N/A
@@ -138,6 +138,102 @@ Su-Schrieffer-Heeger Model
     
     .. math::
         E_\pm = \pm\sqrt{d_x^2 + d_z^2}.
+
+Bernevig-Hughes-Zhang Model
+--------------------------------
+
+.. image:: https://badgen.net/badge/TRS/Preserved/green
+.. image:: https://badgen.net/badge/P/Preserved/green
+.. image:: https://badgen.net/badge/Dimension/2D/orange
+
+* Normal: p orbital below s orbital.
+* Inverted: p orbital above s orbital due to spin-orbit interaction around :math:`\vb{k}=0`. This occurs when the :math:`\ce{HgTe}` sample is thick enough.
+* The four orbitals comes into play:
+
+  .. math::
+      \ket{s,\uparrow},\quad \ket{s,\downarrow},\quad \ket{p_x + ip_y,\uparrow},\quad \ket{p_x - ip_y,\downarrow}.
+* Hamiltonian:
+  
+  .. math::
+      H &= \sum_i \sum_{\alpha=s,p} \sum_{\sigma=\pm} \epsilon_\alpha c^\dagger_{i,\alpha,\sigma} c_{i,\alpha,\sigma} \\
+      &\phantom{{}={}} -\sum_i \sum_{\alpha=s,p} \sum_{\mu=\pm x,\pm y} \sum_{\sigma=\pm} t^{\alpha\beta}_{\mu\sigma} c^\dagger_{i+\mu, \alpha, \sigma} c_{i,\beta,\sigma},
+  where
+  
+  .. math::
+      t_{\mu \sigma} = \begin{pmatrix} t_{ss} & t_{sp} e^{i\sigma \theta_\mu} \\ t_{sp} e^{-i\sigma \theta_\mu} & -t_{pp} \end{pmatrix},
+  and :math:`\theta_\mu` is the angle between :math:`\mu`-direction and :math:`x`-axis, taking values :math:`0`, :math:`\pi/2`, :math:`\pi`, :math:`3\pi/2`.
+* Bulk Hamiltonian:
+  
+  .. math::
+      H &= \sum_{\vb{k}} c^\dagger_{\vb{k}} \qty(\frac{\epsilon_s + \epsilon_p}{2} \mathbb{1}\otimes \mathbb{1} + \frac{\epsilon_s - \epsilon_p}{2}\sigma_z \otimes \mathbb{1}) c_{\vb{k}} \\
+      &\phantom{{}={}} - \sum_{\vb{k}} c^\dagger_{\vb{k}} \qty[ (t_{ss} - t_{pp}) \sum_\mu (\cos \vb{k} \cdot \vb{a}_\mu) \mathbb{1}\otimes \mathbb{1} + (t_{ss} + t_{pp}) \sum_\mu (\cos \vb{k}\cdot \vb{a}_\mu) \sigma_z \otimes \mathbb{1} + (2 t_{sp} \sin \vb{k} \cdot \vb{a}_1) \sigma_y \otimes \mathbb{1} + (2t_{sp} \sin \vb{k} \cdot \vb{a}_2) \sigma_x \otimes s_z ] c_{\vb{k}},
+  where :math:`\vb{a}_1 = \hat{\vb{x}}` and :math:`\vb{a}_2 = \hat{\vb{y}}`, and
+
+  .. math::
+      c^\dagger_{\vb{k}} = \begin{pmatrix} c^\dagger_{\vb{k}, s\uparrow} & c^\dagger_{\vb{k}, s\downarrow} & c^\dagger_{\vb{k}, p\uparrow} & c^\dagger_{\vb{k}, p\downarrow} \end{pmatrix}.
+  
+  Both :math:`\sigma_i` and :math:`s_i` denote Pauli matrices.
+
+  * Simplification: with
+    
+    .. math::
+        \Gamma^1 &= \sigma_x \otimes s_x, \\
+        \Gamma^2 &= \sigma_x \otimes \sigma_y, \\
+        \Gamma^3 &= \sigma_x \otimes \sigma_z, \\
+        \Gamma^4 &= \sigma_y \otimes \mathbb{1}, \\
+        \Gamma^5 &= \sigma_z \otimes \mathbb{1},
+    we rewrite the Hamiltonian as
+
+    .. math::
+        H(\vb{k}) = d_0(\vb{k}) \mathbb{1} + \sum_{a=1}^5 d_a(\vb{k}) \Gamma^a,
+    where
+    
+    .. math::
+        d_0(\vb{k}) &= \frac{\epsilon_s + \epsilon_p}{2} - (t_{ss} - t_{pp}) (\cos \vb{k} \cdot \vb{a}_1 + \cos \vb{k} \cdot \vb{a}_2), \\
+        d_1(\vb{k}) &= 0, \\
+        d_2(\vb{k}) &= 0, \\
+        d_3(\vb{k}) &= 2t_{sp} \sin \vb{k} \cdot \vb{a}_2, \\
+        d_4(\vb{k}) &= 2t_{sp} \sin \vb{k} \cdot \vb{a}_1, \\
+        d_5(\vb{k}) &= \frac{\epsilon_s - \epsilon_p}{2} - (t_{ss} + t_{pp}) (\cos \vb{k} \cdot \vb{a}_1 + \cos\vb{k}\cdot \vb{a}_2).
+    
+  * Dispersion:
+    
+    .. math::
+        E(\vb{k}) = d_0(\vb{k}) \pm \sqrt{\sum_{a=1}^5 d_a(\vb{k})^2}.
+* Parity operator: since :math:`s`-orbital has parity :math:`+1` and :math:`p` orbital has parity :math:`-1`,
+    
+  .. math::
+      \Pi = \sigma_z \otimes \mathbb{1} = \Gamma^5.
+* Time-reversal and parity:
+    
+  .. math::
+      \Theta \Gamma^a \Theta^{-1} &= \begin{cases} -\Gamma^a, & a = 1,2,3,4, \\ +\Gamma^a, & a = 5. \end{cases} \\
+      \Pi \Gamma^a \Pi^{-1} &= \begin{cases} -\Gamma^a, & a = 1,2,3,4, \\ +\Gamma^a, & a = 5. \end{cases}
+* At TRIMs:
+  
+  .. math::
+      H(\vb{k} = \Lambda_i) = d_0(\Lambda_i) \mathbb{1} + d_5(\Lambda_i) \Gamma^5.
+  
+  * The two :math:`s`-orbitals are generated, as well the the two :math:`p`-orbitals: with :math:`\ket{\pm}` denoting parities,
+    
+    .. math::
+        H(\Lambda_i) \ket{+} &= \qty[d_0(\Lambda_i) + d_5(\Lambda_i)] \ket{+}, \\
+        H(\Lambda_i) \ket{-} &= \qty[d_0(\Lambda_i) - d_5(\Lambda_i)] \ket{-}.
+* Band inversion: considering half-filled case,
+  
+  * If :math:`d_5(\Lambda_i) < 0`, the :math:`-1` parity is filled, and therefore :math:`\delta(\Lambda_i) = -1`.
+  * If :math:`d_5(\Lambda_i) > 0`, the :math:`+1` parity is filled, and therefore :math:`\delta(\Lambda_i) = +1`.
+  * Parity:
+    
+    .. math::
+        \delta(\Lambda(n_1, n_2)) = -\operatorname{sign}\qty[\frac{\epsilon_s - \epsilon_p}{2} - (t_{ss} + t_{pp}) \qty{ (-1)^{n_1} + (-1)^{n_2} }].
+  
+  .. note::
+      The Hamiltonian is diagonal in the basis we choose only at TRIMs. As we slowing moving from one TRIM to another, the eigenstates are a mixture of both parities in the middle. After we arrive at the ending TRIM, we may surprisingly find that the parity is different from where we begin.
+* :math:`\mathbb{Z}_2` index:
+    
+  * If :math:`\epsilon_s - \epsilon_p > 4(t_{ss} + t_{pp})`, :math:`\delta < 0` for all :math:`\Lambda_i` and therefore the system is topologically trivial.
+  * If :math:`0 < \epsilon_s - \epsilon_p < 4(t_{ss} + t_{pp})`, :math:`\delta < 0` for all :math:`\Lambda_i` but :math:`\Lambda(0,0)`, and therefore :math:`\nu = 1`.
 
 Miscellaneous
 ---------------
