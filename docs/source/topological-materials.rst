@@ -30,7 +30,7 @@ AlSb/InAs/GaSb/AlSb Quantum Well
 
 .. image:: https://badgen.net/badge/Type/ℤ%2F2/purple
 .. image:: https://badgen.net/badge/Dimension/2D/orange
-.. image:: https://badgen.net/badge/Gap/4mV/red
+.. image:: https://badgen.net/badge/Gap/4meV/red
 .. image:: https://badgen.net/badge/Temperature/4K/orange
 
 [Knez2011]_
@@ -79,7 +79,7 @@ Bi\ :subscript:`1-x`\ Sb\ :subscript:`x` Alloy
 
 .. image:: https://badgen.net/badge/Type/ℤ%2F2(1;111)/purple
 .. image:: https://badgen.net/badge/Dimension/3D/cyan
-.. image:: https://badgen.net/badge/Gap/30mV/orange
+.. image:: https://badgen.net/badge/Gap/30meV/orange
 .. image:: https://badgen.net/badge/Temperature/>4K/orange
 
 [Fu2007]_ [Hsieh2008]_
@@ -95,6 +95,133 @@ Bi\ :subscript:`1-x`\ Sb\ :subscript:`x` Alloy
 Tetradymite
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. image:: https://badgen.net/badge/Type/ℤ%2F2(1;000)/purple
+.. image:: https://badgen.net/badge/Dimension/3D/cyan
+.. image:: https://badgen.net/badge/Gap/~0.3eV/green
+.. image:: https://badgen.net/badge/Temperature/<55K/yellow
+
+.. note::
+    :math:`c`-axis corresponds to the :math:`(111)`-direction of :math:`\ce{NaCl}` lattice.
+
+* :math:`\ce{Bi2Se3}` (confirmed [Xia2009]_), :math:`\ce{Bi2Te3}` (confirmed [Chen2009]_), and :math:`\ce{Sb2Te3}` (confirmed [Jiang2012]_) are predicted to be TIs [Zhang2009]_.
+* Tetradymites:
+
+  * A-B-C-A-B-C packing of quintuple layers.
+  * Each quintuple layer of the form Se-Bi-Se-Bi-Se.
+  * Van der Waals cohesion.
+* Only one Dirac cone, around :math:`\overline{\Gamma}` of surface BZ.
+* Easy fabrication. Surface states are all topological.
+* Pure crystal hard to obtain. Observation of surface transport disrupted.
+
+.. note::
+    Problem here: bulk conductivity too high.
+
+More Tetradymite Materials
+""""""""""""""""""""""""""""""
+
+* High resistivity found in :math:`\ce{Bi2Te_{1.95}Se_{1.05}}` [Ren2010]_.
+* With SdH and Hall data, it is found that surface states contribute :math:`6\%` of the total conductivity while the rest :math:`94\%` are from the bulk states.
+* See also :math:`\ce{Bi_{2-x}Sb_{x}Te_{3-y}Se_y}` [Ren2011]_.
+* :math:`\ce{Bi_{2-x}Sn_xTe_2Se}`: Fermi level dragged into band gap also by doping [Ren2012]_. Surface states contributes up to :math:`50\%` of the total conductivity.
+
+BiQ Homologous Series
+""""""""""""""""""""""""""
+
+* Formula :math:`\ce{(Bi2)_n(Bi2X3)_m}`.
+* Structure: packing of multi-layers. Covalent inter-multi-layer while van der Waals intra-multi-layer.
+* :math:`\ce{(Bi2)(Bi2Se_{3-x}S_x)}` found to be topological semimetal for :math:`x=0.4` [Valla2012]_.
+* :math:`\ce{(Bi2)(Bi2Te3)_2}`, i.e. :math:`\ce{BiTe}`, confirmed to be topological, yet unknown if it is insulator [Cava2013]_.
+
+TlBiSe\ :subscript:`2`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://badgen.net/badge/Type/ℤ%2F2(1;000)/purple
+.. image:: https://badgen.net/badge/Dimension/3D/cyan
+.. image:: https://badgen.net/badge/Gap/~0.35eV/green
+.. image:: https://badgen.net/badge/Temperature/<20K/yellow
+
+[Yan2010]_ [Lin2010]_ [Sato2010]_ [Kuroda2010]_ [Chen2010]_
+
+* Structure similar to tetradymite.
+* Topological phase transition from :math:`\ce{TlBiS2}`:
+
+  * Topological insulator :math:`\ce{TlBi(S_{1-x}Se_x)_2}` for :math:`x>0.5` [Xu2011]_, trivial insulator for :math:`x<0.5`.
+  * Gap found at the Dirac point near :math:`x=0.5` [Sato2011]_ [Souma2012a]_, of yet unknown origin, which should have been degenerate by Kramers theorem.
+
+GeBi\ :subscript:`2`\ Te\ :subscript:`4`
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://badgen.net/badge/Type/ℤ%2F2(1;000)/purple
+.. image:: https://badgen.net/badge/Dimension/3D/cyan
+.. image:: https://badgen.net/badge/Gap/~0.18eV/green
+.. image:: https://badgen.net/badge/Temperature/~50K/yellow
+
+* N-type degenerate semiconductor due to defects [Okamoto2012]_.
+
+Ge-Based Homologous Series
+""""""""""""""""""""""""""""""""""""
+
+* Formula :math:`\ce{(GeTe)_n(Bi2Te3)_m}`.
+* :math:`\ce{GeBi_{4-x}Sb_xTe_7}` confirmed [Muff2013]_.
+
+Pb-Based Materials
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://badgen.net/badge/Type/ℤ%2F2(1;000)/purple
+.. image:: https://badgen.net/badge/Dimension/3D/cyan
+.. image:: https://badgen.net/badge/Gap/~0.2eV/green
+.. image:: https://badgen.net/badge/Temperature/~30K/yellow
+
+* :math:`\ce{PbBi2Te4}` is p-type.
+* :math:`\ce{PbSb2Te4}` is n-type.
+* Dirac fermion in :math:`\ce{Pb(Bi_{1-x}Sb_x)_2Te4}` from n-type to p-type as :math:`x` increase [Souma2012b]_.
+
+Pb-Based Homologous Series
+""""""""""""""""""""""""""""""
+
+* Formula :math:`\ce{(PbTe)_n(Bi2Te3)_m}`.
+* :math:`\ce{PbBi4Te4}` confirmed [Eremeev2012]_.
+
+BiTeCl
+^^^^^^^^^^^^^^^^
+
+.. image:: https://badgen.net/badge/Type/ℤ%2F2(1;000)/purple
+.. image:: https://badgen.net/badge/Dimension/3D/cyan
+.. image:: https://badgen.net/badge/Gap/~0.22eV/green
+.. image:: https://badgen.net/badge/Temperature/~10K/orange
+.. image:: https://badgen.net/badge/P/broken/red
+
+* Surface states helical despite bulk inversion symmetry broken [Chen2013]_.
+
+HgTe (Epitaxial)
+^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: https://badgen.net/badge/Type/ℤ%2F2(1;000)/purple
+.. image:: https://badgen.net/badge/Dimension/3D/cyan
+.. image:: https://badgen.net/badge/Gap/~20meV/orange
+.. image:: https://badgen.net/badge/Temperature/~50mK/red
+
+* Epitaxial growth on :math:`\ce{CdTe}` substrate [Brüne2011]_.
+* Band gap opened by broken symmetry.
+
+Sn (Epitaxial)
+^^^^^^^^^^^^^^^^^
+
+.. image:: https://badgen.net/badge/Type/ℤ%2F2(1;000)/purple
+.. image:: https://badgen.net/badge/Dimension/3D/cyan
+.. image:: https://badgen.net/badge/Gap/~30meV/orange
+.. image:: https://badgen.net/badge/Temperature/~20K/yellow
+
+* Epitaxial growth of :math:`\alpha`-:math:`\ce{Sn}` on :math:`\ce{InSb} (001)` [Barfuss2013]_ [Ohtsubo2013]_.
+* Helical surface states observed.
+
+Glossary
+-----------
+
+.. glossary::
+    Tetradymite/テトラジマイト/辉碲铋矿
+        A mineral consisting of bismuth, tellurium and sulfide, :math:`\ce{Bi2Te2S}`, a.k.a. telluric bismuth.
+
 References
 -------------
 
@@ -105,3 +232,28 @@ References
 .. [Yang2012] `Spatial and Energy Distribution of Topological Edge States in Single Bi(111) Bilayer <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.109.016801>`_
 .. [Fu2007] `Topological insulators with inversion symmetry <https://journals.aps.org/prb/abstract/10.1103/PhysRevB.76.045302>`_
 .. [Hsieh2008] `A topological Dirac insulator in a quantum spin Hall phase <https://www.nature.com/articles/nature06843>`_
+.. [Zhang2009] `Topological insulators in Bi2Se3, Bi2Te3 and Sb2Te3 with a single Dirac cone on the surface <https://www.nature.com/articles/nphys1270>`_
+.. [Xia2009] `Observation of a large-gap topological-insulator class with a single Dirac cone on the surface <https://www.nature.com/articles/nphys1274>`_
+.. [Chen2009] `Experimental Realization of a Three-Dimensional Topological Insulator, Bi2Te3 <https://www.science.org/doi/abs/10.1126/science.1173034>`_
+.. [Jiang2012] `Landau Quantization and the Thickness Limit of Topological Insulator Thin Films of Sb2Te3 <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.108.016401>`_
+.. [Ren2010] `Large bulk resistivity and surface quantum oscillations in the topological insulator Bi2Te2Se <https://journals.aps.org/prb/abstract/10.1103/PhysRevB.82.241306>`_
+.. [Ren2011] `Optimizing Bi2−xSbxTe3−ySey solid solutions to approach the intrinsic topological insulator regime <https://journals.aps.org/prb/abstract/10.1103/PhysRevB.84.165311>`_
+.. [Ren2012] `Fermi level tuning and a large activation gap achieved in the topological insulator Bi2Te2Se by Sn doping <https://journals.aps.org/prb/abstract/10.1103/PhysRevB.85.155301>`_
+.. [Yan2010] `Theoretical prediction of topological insulators in thallium-based III-V-VI2 ternary chalcogenides <https://iopscience.iop.org/article/10.1209/0295-5075/90/37002/meta>`_
+.. [Lin2010] `Single-Dirac-Cone Topological Surface States in the TlBiSe2 Class of Topological Semiconductors <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.036404>`_
+.. [Sato2010] `Direct Evidence for the Dirac-Cone Topological Surface States in the Ternary Chalcogenide TlBiSe2 <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.136802>`_
+.. [Kuroda2010] `Experimental Realization of a Three-Dimensional Topological Insulator Phase in Ternary Chalcogenide TlBiSe2 <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.146801>`_
+.. [Chen2010] `Single Dirac Cone Topological Surface State and Unusual Thermoelectric Property of Compounds from a New Topological Insulator Family <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.105.266401>`_
+.. [Xu2011] `Topological Phase Transition and Texture Inversion in a Tunable Topological Insulator <https://www.science.org/doi/abs/10.1126/science.1201607>`_
+.. [Sato2011] `Unexpected mass acquisition of Dirac fermions at the quantum phase transition of a topological insulator <https://www.nature.com/articles/nphys2058>`_
+.. [Souma2012a] `Spin Polarization of Gapped Dirac Surface States Near the Topological Phase Transition in TlBi(S1−xSex)2 <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.109.186804>`_
+.. [Okamoto2012] `Observation of a highly spin-polarized topological surface state in GeBi2Te4 <https://journals.aps.org/prb/abstract/10.1103/PhysRevB.86.195304>`_
+.. [Souma2012b] `Topological Surface States in Lead-Based Ternary Telluride Pb(Bi1−xSbx)2Te4 <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.108.116801>`_
+.. [Eremeev2012] `Atom-specific spin mapping and buried topological states in a homologous series of topological insulators <https://www.nature.com/articles/ncomms1638>`_
+.. [Muff2013] `Separating the bulk and surface n- to p-type transition in the topological insulator GeBi4−xSbxTe7 <https://journals.aps.org/prb/abstract/10.1103/PhysRevB.88.035407>`_
+.. [Chen2013] `Discovery of a single topological Dirac fermion in the strong inversion asymmetric compound BiTeCl <https://www.nature.com/articles/nphys2768>`_
+.. [Valla2012] `Topological semimetal in a Bi-Bi2Se3 infinitely adaptive superlattice phase <https://journals.aps.org/prb/abstract/10.1103/PhysRevB.86.241101>`_
+.. [Cava2013] `Crystal structure and chemistry of topological insulators <https://pubs.rsc.org/en/content/articlelanding/2013/tc/c3tc30186a>`_
+.. [Brüne2011] `Quantum Hall Effect from the Topological Surface States of Strained Bulk HgTe <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.106.126803>`_
+.. [Barfuss2013] `Elemental Topological Insulator with Tunable Fermi Level: Strained α-Sn on InSb(001) <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.157205>`_
+.. [Ohtsubo2013] `Dirac Cone with Helical Spin Polarization in Ultrathin α-Sn(001) Films <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.216401>`_

@@ -157,8 +157,8 @@ Su-Schrieffer-Heeger Model
 Bernevig-Hughes-Zhang Model
 --------------------------------
 
-.. image:: https://badgen.net/badge/TRS/Preserved/green
-.. image:: https://badgen.net/badge/P/Preserved/green
+.. image:: https://badgen.net/badge/TRS/preserved/green
+.. image:: https://badgen.net/badge/P/preserved/green
 .. image:: https://badgen.net/badge/Dimension/2D/orange
 
 .. rst-class:: text-muted
