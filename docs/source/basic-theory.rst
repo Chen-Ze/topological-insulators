@@ -311,6 +311,34 @@ Spin Pump: ℤ₂ Index and Time-Reversal Polarization
   .. math::
       (-1)^\nu = \prod_{i=1}^4 \frac{\operatorname{Pf}[w(\Lambda_i)]}{\sqrt{\det[w(\Lambda_i)]}}.
 
+ℤ₂ Index via Wilson Loop
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+See `凝聚态中的拓扑（四）：从TKNN到Z2拓扑绝缘体 - 中科院物理所的文章 - 知乎 <https://zhuanlan.zhihu.com/p/23828586>`_.
+
+* At given :math:`k_y`, we define
+  
+  .. math::
+      \hat{W} = \hat{A}_{12} \hat{A}_{23} \cdots \hat{A}_{N-1,N} \hat{A}_{N1},
+  where
+
+  .. math::
+      \qty(\hat{A}_{ij})_{nm} &= \bra{\phi_{\vb{k}_i,n}} \ket{\phi_{\vb{k}_j,m}}, \\
+      \vb{k}_i &= (k_{x,i}, k_y),
+  and :math:`k_{x,i}` devides :math:`(-\pi,\pi)` into :math:`N` intervals.
+* :math:`\hat{W} \in \mathrm{U}(2)` and therefore takes the form
+  
+  .. math::
+      \hat{W} = z\hat{W}_0
+  where :math:`z\in \mathrm{U}(1)` and :math:`\hat{W}_0 \in \mathrm{SU}(2)`.
+* :math:`\hat{W}_0` takes eigenvalues :math:`e^{\pm i\Theta}`.
+* At :math:`k_y = 0,\pi`, TRS guarantees either :math:`e^{\pm i \Theta} = 1` or :math:`e^{\pm i \Theta} = -1`.
+* As we travel from :math:`k_y = 0` to :math:`k_y = \pi`, :math:`e^{\pm i \Theta}` draws a closed loop on the cylinder :math:`(0,\pi) \times \mathrm{U}(1)`. The winding number :math:`\nu` is the :math:`\mathbb{Z}_2` index.
+
+.. warning::
+    It may seem that :math:`\hat{W} \equiv \mathbb{1}`. However, as we demand that :math:`\hat{A}_{ij} \approx \mathbb{1}`, :math:`\hat{W}` could be nontrivial. For example, if each :math:`k\in (-\pi,\pi)` is associated with two orthonormal eigenvectors in :math:`\mathbb{R}^2` given by rotating :math:`(\hat{\vb{x}}, \hat{\vb{y}})` by :math:`k/2` radian, then :math:`\hat{W} = -\mathbb{1}`.
+
+
 Three-Dimensional Topological Insulators With Time-Reversal Invariance: ℤ₂ Index and Edge States
 ------------------------------------------------------------------------------------------------------
 
