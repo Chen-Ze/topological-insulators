@@ -272,6 +272,30 @@ Candidates of Topological Semimetals
 * Layers of :math:`\ce{HgTe}/\ce{CdTe}` with electric field applied.
 * MBE growth of :math:`\ce{Tl-Se-Bi-S}` multi-layers.
 
+Topological Crystalline Insulator
+------------------------------------
+
+SnTe
+^^^^^^^^^
+
+.. image:: https://badgen.net/badge/Type/ℤ%2F2(0;000)/grey
+.. image:: https://badgen.net/badge/Type/Mirror(-2)/purple
+.. image:: https://badgen.net/badge/Dimension/3D/cyan
+.. image:: https://badgen.net/badge/Gap/0.3eV/green
+.. image:: https://badgen.net/badge/Temperature/~4K/orange
+
+[Hsieh2012]_ [Tanaka2012]_ [Dziawa2012]_
+
+* :math:`\ce{SnTe}`: Double Dirac cones found around each :math:`\overline{X}` point in the surface BZ, each the projection of two :math:`L` points.
+* :math:`\ce{PbTe}`: topologically trivial.
+* :math:`\ce{Pb_{1-x}Sn_xTe}`: topological phase transition around :math:`x=0.25`.
+* The two Dirac cones around each :math:`\overline{X}` are separated due to level repulsion (or avoided crossing).
+
+SnSe
+===============
+
+* :math:`\ce{Pb_{0.77}Sn_{0.23}Se}`: trivial insulator at RT while topological at :math:`T` goes down, where spin-orbital interaction increases due to lattice shrinking.
+
 Glossary
 -----------
 
@@ -315,3 +339,6 @@ References
 .. [Barfuss2013] `Elemental Topological Insulator with Tunable Fermi Level: Strained α-Sn on InSb(001) <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.157205>`_
 .. [Ohtsubo2013] `Dirac Cone with Helical Spin Polarization in Ultrathin α-Sn(001) Films <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.216401>`_
 .. [Nakayama2012] `Manipulation of Topological States and the Bulk Band Gap Using Natural Heterostructures of a Topological Insulator <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.109.236804>`_
+.. [Hsieh2012] `Topological crystalline insulators in the SnTe material class <https://www.nature.com/articles/ncomms1969>`_
+.. [Tanaka2012] `Experimental realization of a topological crystalline insulator in SnTe <https://www.nature.com/articles/nphys2442>`_
+.. [Dziawa2012] `Topological crystalline insulator states in Pb1−xSnxSe <https://www.nature.com/articles/nmat3449>`_

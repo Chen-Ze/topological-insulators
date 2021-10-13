@@ -457,6 +457,23 @@ Remark: Why Does TRS Matter?
 | そのため,　時間反転対称性を保った絶縁体でも非自明なトポロジーを持ち得るという発見が, それまでの常識を覆すものだった.
 | ただ残念なことに, 現実のグラフェンにおいてはスピン軌道相互作用が非常に弱いことがわかっており, Kane-Mele理論の帰結としての量子スピンホル効果を実験的に確認することは困難だった.』
 
+Topological Crystalline Insulators
+--------------------------------------
+
+* :math:`\mathbb{Z}_2` index is based on TRS.
+* Topological index based on crystal symmeries, e.g. :math:`C_4`, :math:`C_6`, and :math:`m` may be given.
+
+Mirror Chern Number
+^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Mirror Chern number:
+
+  .. math::
+      n_{\mathcal{M}} = \nu_1 - \nu_{-1},
+      
+  where :math:`\nu_{\pm 1}` are the Chern numbers of the subspaces with eigenvalue :math:`\pm 1` under :math:`m`.
+* Mirror chirality: for 3D systems with :math:`\nu_0 = 1`, :math:`\nu_{\mathcal{M}} = \pm 1` and therefore defines the mirror chirality.
+
 Glossary
 -----------
 
