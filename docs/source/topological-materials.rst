@@ -182,6 +182,17 @@ Pb-Based Homologous Series
 * Formula :math:`\ce{(PbTe)_n(Bi2Te3)_m}`.
 * :math:`\ce{PbBi4Te4}` confirmed [Eremeev2012]_.
 
+Natural Superlattice
+""""""""""""""""""""""""
+
+* Formula :math:`\ce{(PbSe)_5(Bi2Se3)_{3m}}` where :math:`m=1,2`.
+* Alternation of :math:`m` times of quintuple layers and :math:`\ce{PbSe}` layers.
+* Dirac cone exists for :math:`m=2`.
+
+  * Dirac gap opened due to mixture of states on the upper surface and lower surface.
+
+  * Large bulk gap of 0.5eV due to quantum confinement of :math:`\ce{Bi2Se3}`.
+
 BiTeCl
 ^^^^^^^^^^^^^^^^
 
@@ -214,6 +225,18 @@ Sn (Epitaxial)
 
 * Epitaxial growth of :math:`\alpha`-:math:`\ce{Sn}` on :math:`\ce{InSb} (001)` [Barfuss2013]_ [Ohtsubo2013]_.
 * Helical surface states observed.
+
+Candidates of 3D Topological Materials
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* :math:`\ce{Ag2Te}`, magnetoresistance proportional to magnetic field in a wide range, possibly of topological origin.
+* :math:`\ce{SmB6}`, possibly topological Kondo insulator.
+* :math:`\ce{Bi_{14}Rh3I9}`:
+
+  * Weak topological insulator :math:`(0;001)` by calculation.
+  * Packing of two-dimensional insulators
+  * Honeycomb lattice. 
+  * Surface states are hard to be detecte by ARPES since they are not on the cleavage surface.
 
 Glossary
 -----------
@@ -257,3 +280,4 @@ References
 .. [Brüne2011] `Quantum Hall Effect from the Topological Surface States of Strained Bulk HgTe <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.106.126803>`_
 .. [Barfuss2013] `Elemental Topological Insulator with Tunable Fermi Level: Strained α-Sn on InSb(001) <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.157205>`_
 .. [Ohtsubo2013] `Dirac Cone with Helical Spin Polarization in Ultrathin α-Sn(001) Films <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.111.216401>`_
+.. [Nakayama2012] `Manipulation of Topological States and the Bulk Band Gap Using Natural Heterostructures of a Topological Insulator <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.109.236804>`_
