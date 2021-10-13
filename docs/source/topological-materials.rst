@@ -238,6 +238,40 @@ Candidates of 3D Topological Materials
   * Honeycomb lattice. 
   * Surface states are hard to be detecte by ARPES since they are not on the cleavage surface.
 
+Topological Semimetals
+-----------------------------
+
+Definition of Topological Semimetals
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Topological semimetals may refer two three kinds of materials.
+
+* Ordinary semimetals (i.e. those where the top of the valence band is lower than the bottom of the conduction band) with nontrivial :math:`\mathbb{Z}_2` index, e.g. :math:`\ce{Sb}`.
+* Zero-gap semiconductors where the degeneracy is protected by crystal symmetries, e.g. :math:`\ce{HgTe}`, where the gap may be opened by perturbations that breaks the symmetries.
+* Weyl semimetals.
+
+Weyl Semimetals
+^^^^^^^^^^^^^^^^^^^^
+
+* Chirality as a good quantum number.
+* Massless Dirac equation: Dirac equation diagonalized into two :math:`2\times 2`-blocks of each chirality.
+* Inversion symmetry or TRS broken: spin-degeneracy lifted.
+* At intersections of conduction bands and valance bands (i.e. Weyl points): Hamiltonian (:math:`\pm` depending on chirality)
+* Weyl points exist in pair of opposite chiralities.
+
+  .. math::
+      H = \pm \hbar v_{\mathrm{F}} \vb{\sigma}\cdot \vb{k}.
+* A Weyl point pair is joined by a Dirac arc, projection of which onto the 2D BZ surface gives gapless surface state.
+
+Candidates of Topological Semimetals
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Heusler compounds and half-Heusler compounds: zero band-gap semiconductors by crystal symmetry.
+* AFM phase of :math:`\ce{Y2Ir2O7}`.
+* :math:`\ce{Nd2(Ir_{1-x}Rh_x)_2O7}`: Mott transition.
+* Layers of :math:`\ce{HgTe}/\ce{CdTe}` with electric field applied.
+* MBE growth of :math:`\ce{Tl-Se-Bi-S}` multi-layers.
+
 Glossary
 -----------
 
