@@ -292,9 +292,38 @@ SnTe
 * The two Dirac cones around each :math:`\overline{X}` are separated due to level repulsion (or avoided crossing).
 
 SnSe
-===============
+^^^^^^^^^
 
 * :math:`\ce{Pb_{0.77}Sn_{0.23}Se}`: trivial insulator at RT while topological at :math:`T` goes down, where spin-orbital interaction increases due to lattice shrinking.
+
+Synthesization
+------------------
+
+Bulk Single Crystal
+^^^^^^^^^^^^^^^^^^^^^^^
+
+* Bridgeman method.
+  
+  * :math:`\ce{Bi2Se3}`, :math:`\ce{Bi2Te3}`, :math:`\ce{Bi2Te2Se}`.
+* Vapor transport method.
+
+  * PVT (physical vapor transport): :math:`\ce{SnTe}`, :math:`\ce{(Pb,Sn)Se}`, :math:`\ce{(Pb,Sn)Te}`.
+  * CVT (chemical vapor transport).
+
+Thin-Film
+^^^^^^^^^^^
+
+* MBE (molecular beam epitaxy) method.
+  
+  * :math:`\ce{Bi_{1-x}Sb_x}`, :math:`\ce{Bi2Se3}`, :math:`\ce{Bi2Te3}`, :math:`\ce{Sb2Te3}`, :math:`\ce{(Bi,Sb)_2Te3}`.
+* CVD (chemical vapor deposition).
+  
+  * :math:`\ce{Bi2Se3}`.
+
+Nano-Ribbon and Nano-Plate
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* VLS (vapor liquid solid) method.
 
 Glossary
 -----------
