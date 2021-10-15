@@ -20,6 +20,7 @@ Contents
    fu-kane-pump.ipynb
    1d-topological-insulator.ipynb
    topological-materials
+   properties
    computation
 
 Maintenance
