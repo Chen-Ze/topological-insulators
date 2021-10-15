@@ -13,7 +13,7 @@ Contents
 .. toctree::
 
    prerequisites
-   visualizing-the-fermi-surface
+   experimental-techniques
    basic-theory
    models
    thouless-pump.ipynb
