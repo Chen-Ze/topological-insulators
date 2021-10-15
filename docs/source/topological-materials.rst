@@ -325,6 +325,15 @@ Nano-Ribbon and Nano-Plate
 
 * VLS (vapor liquid solid) method.
 
+Bulk Insulation
+----------------------
+
+* Bulk carrier density too high due to defects.
+* Fixed by doping.
+* Tunable between p-type and n-type.
+  
+  * Enabling p-n junction using surface states.
+
 Glossary
 -----------
 
