@@ -310,7 +310,7 @@ Bulk Single Crystal
   * PVT (physical vapor transport): :math:`\ce{SnTe}`, :math:`\ce{(Pb,Sn)Se}`, :math:`\ce{(Pb,Sn)Te}`.
   * CVT (chemical vapor transport).
 
-Thin-Film
+Thin Film
 ^^^^^^^^^^^
 
 * MBE (molecular beam epitaxy) method.
