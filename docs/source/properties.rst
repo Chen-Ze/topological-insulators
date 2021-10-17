@@ -145,3 +145,25 @@ More Information from SdH Oscillation
   
   .. math::
       \ell^{\mathrm{SdH}} = v_{\mathrm{F}} \tau.
+
+Example: Two-Band Model
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Taking bulk and surface conductivity into account, we find
+  
+  .. math::
+      \rho_{yx} &= \frac{(R_{\mathrm{s}} \rho_{\mathrm{b}}^2 + R_{\mathrm{b}}\rho_{\mathrm{s}}^2)B + R_{\mathrm{s}} R_{\mathrm{s}} (R_{\mathrm{s}} + R_{\mathrm{b}})B^3}{(\rho_{\mathrm{s}} + \rho_{\mathrm{b}})^2 + (R_{\mathrm{s}} + R_{\mathrm{b}})^2 B^2}, \\
+      \rho_{xx} &= \frac{\rho_{\mathrm{s}} \rho_{\mathrm{b}} (\rho_{\mathrm{s}} + \rho_{\mathrm{b}}) + (\rho_{\mathrm{s}} R_{\mathrm{b}}^2 + \rho_{\mathrm{b}} \rho_{\mathrm{s}}^2)B^2}{(\rho_{\mathrm{s}} + \rho_{\mathrm{b}})^2 + (R_{\mathrm{s}} + R_{\mathrm{b}})^2 B^2},
+  where :math:`\rho_{\mathrm{b}}` and :math:`R_{\mathrm{b}}` are resistivity and Hall coefficient of the bulk, respectively, while :math:`\rho_{\mathrm{s}}` and :math:`R_{\mathrm{s}}` are those of the surface, where
+  
+  .. math::
+      \rho_{\mathrm{s}} &= \rho_{\mathrm{2D}} t, \\
+      R_{\mathrm{s}} &= \frac{t}{e n_{\mathrm{s}}},
+  and :math:`t` is the thickness of the sample.
+* Parameters :math:`n_{\mathrm{3D}}`, :math:`\rho_{\mathrm{b}}`, :math:`n_{\mathrm{s}}`, and :math:`\rho_{\mathrm{2D}}` may be obtained by fitting the data, hence electron mobility.
+  
+  * :math:`n_{\mathrm{s}}` may also be obtained from SdH data.
+  * Additional constraint that the fitting be exact for :math:`\rho_{xx}(B=0)` be imposed to reduce DoF.
+
+.. warning::
+    :math:`\mu^{\mathrm{tr}}_{\mathrm{s}} > \mu^{\mathrm{SdH}}_{\mathrm{s}}` due to difference in scattering mechanisms.
