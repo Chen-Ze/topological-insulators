@@ -5,8 +5,6 @@ Topological Materials
 
     『遠いのは、距離じゃなくて次元なんだよ。』
 
-    『三次元ってのはな、もっと面倒くさいんだよ。』
-
 2D Topological Insulators
 -------------------------
 
@@ -260,7 +258,7 @@ Weyl Semimetals
 * Weyl points exist in pair of opposite chiralities.
 
   .. math::
-      H = \pm \hbar v_{\mathrm{F}} \vb{\sigma}\cdot \vb{k}.
+      H = \pm \hbar v_{\mathrm{F}} \vb*{\sigma}\cdot \vb{k}.
 * A Weyl point pair is joined by a Dirac arc, projection of which onto the 2D BZ surface gives gapless surface state.
 
 Candidates of Topological Semimetals

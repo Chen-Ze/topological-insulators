@@ -1,6 +1,10 @@
 Physical Properties of Topological Insulators
 ======================================================
 
+.. rst-class:: text-right text-muted
+
+    『三次元ってのはな、もっと面倒くさいんだよ。』
+
 Helical Spin Polarization
 -----------------------------
 
@@ -8,7 +12,7 @@ Helical Spin Polarization
 * Electron spins are perpendicular to :math:`\vb{k}`.
 * Electrons hold helicity.
   
-  * In particular, a Kramers pair consists of :math:`(\vb{k},\vb{\sigma})` and :math:`(-\vb{k},-\vb{\sigma})`, i.e. they hold the same helicity.
+  * In particular, a Kramers pair consists of :math:`(\vb{k},\vb*{\sigma})` and :math:`(-\vb{k},-\vb*{\sigma})`, i.e. they hold the same helicity.
 * Degeneracy at Dirac point protected by TRS.
 * TIs known as of 2014 are left-handed for Fermi levels above the Dirac point and right-handed below.
 

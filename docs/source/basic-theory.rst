@@ -152,7 +152,7 @@ Example: A Two-Band Model
 * Hamiltonian: magnetic dipole,
 
   .. math::
-      H(\vb{k}) = \vb{h}(\vb{k}) \cdot \vb{\sigma}.
+      H(\vb{k}) = \vb{h}(\vb{k}) \cdot \vb*{\sigma}.
 * Ket space: :math:`\ket{u} \in \mathbb{C}^2`. More specifically, :math:`S^2`.
 * Dispersion relation:
 

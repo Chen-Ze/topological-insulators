@@ -67,7 +67,7 @@ Thouless Charge Pump (Rice-Mele Model)
 * Bulk Hamiltonian:
 
   .. math::
-      H = \sum_{k} \begin{pmatrix}a^\dagger_{k} & b^\dagger_{k} \end{pmatrix} \vb{d}\cdot \vb{\sigma} \begin{pmatrix}a_{k} \\ b_{k} \end{pmatrix},
+      H = \sum_{k} \begin{pmatrix}a^\dagger_{k} & b^\dagger_{k} \end{pmatrix} \vb{d}\cdot \vb*{\sigma} \begin{pmatrix}a_{k} \\ b_{k} \end{pmatrix},
   where
   
   .. math::
@@ -99,7 +99,7 @@ Fu-Kane Spin Pump (Rice-Mele Model With Spin)
 * Bulk Hamiltonian:
 
   .. math::
-      H = \sum_{k} \begin{pmatrix}\psi^\dagger_{k,\uparrow} & \psi^\dagger_{k,\downarrow} \end{pmatrix} \begin{pmatrix} \vb{d}_+ \cdot \vb{\sigma} & 0 \\ 0 & \vb{d}_- \cdot \vb{\sigma} \end{pmatrix} \begin{pmatrix}\psi_{k,\uparrow} \\ \psi_{k,\downarrow} \end{pmatrix},
+      H = \sum_{k} \begin{pmatrix}\psi^\dagger_{k,\uparrow} & \psi^\dagger_{k,\downarrow} \end{pmatrix} \begin{pmatrix} \vb{d}_+ \cdot \vb*{\sigma} & 0 \\ 0 & \vb{d}_- \cdot \vb*{\sigma} \end{pmatrix} \begin{pmatrix}\psi_{k,\uparrow} \\ \psi_{k,\downarrow} \end{pmatrix},
   where
   
   .. math::

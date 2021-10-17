@@ -22,6 +22,7 @@ Contents
    topological-materials
    properties
    computation
+   topological-superconductors
 
 Maintenance
 -------------
