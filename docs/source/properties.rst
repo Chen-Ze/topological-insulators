@@ -52,3 +52,96 @@ Dirac Particles
     
     .. math::
         \sigma_{xy} = -\frac{e^2}{h} \qty(N + \frac{1}{2}).
+
+SdH Oscillation of Surface State
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Lattice vibration only has finite effect on Landau levels.
+* Electronic properties mostly depend on :math:`\rho(E_{\mathrm{F}})`.
+* DoS to relaxation time:
+
+  .. math::
+      \rho(E_{\mathrm{F}}) \sim \frac{1}{\tau},
+  i.e. higher the DoS, higher the scattering probability.
+* Under strong magnetic field,
+  
+  .. math::
+      \sigma_{xx} &\approx \frac{nm^* c^2}{B^2 \tau}, \\
+      \sigma_{xy} &\approx \frac{nec}{B}.
+* Minima of :math:`\sigma_{xx}`: :math:`E_{\mathrm{F}}` between two consecutive Landau levels, and therefore :math:`\rho(E_{\mathrm{F}})` is small.
+* Maxima of :math:`\sigma_{xx}`: :math:`E_{\mathrm{F}}` lies at a certain Landau level, and therefore :math:`\rho(E_{\mathrm{F}})` is large.
+* Different from ordinary 2D electron systems where :math:`\sigma_{xy}` is proportional to the filling factor :math:`\nu`, in a Dirac system :math:`\sigma_{xy}` is proportional to `(N+1/2)` due to the Landau level at the Dirac point.
+
+Fan Diagram
+""""""""""""""""""
+
+* Oscillation of :math:`\sigma_{xx}`:
+
+  .. math::
+      \Delta \sigma_{xx} \propto \cos \qty[ 2\pi\qty(\frac{F}{B} - \frac{1}{2} + \beta)].
+* :math:`B_N` denotes the :math:`N`\ th :math:`\operatorname{argmin}` of :math:`\sigma_{xx}`.
+* :math:`1/B_N` versus :math:`N` is a straight line:
+  
+  .. math::
+      2\pi \qty(\frac{F}{B_N} - \frac{1}{2} + \beta) = (2N - 1)\pi.
+* :math:`\beta` obtained by extrapolation of :math:`1/B_N`\ -:math:`N` to :math:`1/B_N = 0`, which hits the :math:`N`-axis at :math:`N=\beta`.
+* Dirac system confirmed if :math:`\beta = 1/2` by such extrapolation.
+
+.. warning::
+    :math:`\sigma_{xx} \ll \abs{\sigma_{xy}}` may not hold in experiment condition. It's more reliable to find minima based on :math:`\sigma_{xy}` instead of :math:`\rho_{xy}`.
+
+More Information from SdH Oscillation
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Carrier density: for 2D Dirac system,
+  
+  .. math::
+      n_{\mathrm{s}} = \frac{1}{(2\pi)^2} \pi k_{\mathrm{F}}^2 = \frac{e}{2\pi \hbar c}F,
+  where we have assumed cylindrical sections and therefore
+  
+  .. math::
+      F = \frac{\hbar c}{2\pi e} \pi k_{\mathrm{F}}^2.
+* Testing if SdH oscillation comes from 2D surface states:
+  
+  .. math::
+      F \sim \frac{1}{\cos\theta}
+  for 2D electron systems where :math:`\theta` is the angle between :math:`\vb{B}` and the normal vector to the electron system.
+* Cyclotron frequency: with Lifshitz-Kosevich theory,
+  
+  .. math::
+      \Delta \sigma_{xx} = A_0 R_{\mathrm{T}} R_{\mathrm{D}} R_{\mathrm{S}} \cos \qty[2\pi \qty(\frac{F}{B} - \frac{1}{2} + \beta)],
+  where
+
+  .. math::
+      R_{\mathrm{T}} &= 2\pi^2 \frac{k_{\mathrm{B}} T / \hbar\omega_{\mathrm{c}}}{\sinh \qty[2\pi^2 (k_{\mathrm{B}} T / \hbar \omega_{\mathrm{c}} )]}, \\
+      R_{\mathrm{D}} &= \exp [-2\pi^2 (k_{\mathrm{B}} T_{\mathrm{D}} / \hbar \omega_{\mathrm{c}})], \\
+      R_{\mathrm{S}} &= \cos \qty(\frac{1}{2} \pi g m_{\mathrm{e}} / m_{\mathrm{c}}),
+  :math:`g` is the :math:`g`\ -factor of electron, and :math:`T_{\mathrm{D}}` is the Dingle temperature given by
+
+  .. math::
+      T_{\mathrm{D}} = \frac{\hbar}{2\pi k_{\mathrm{B}} \tau}.
+  
+  * Obtain :math:`m_{\mathrm{c}}` with fixed :math:`B` and varying :math:`T`.
+* Fermi velocity: with
+  
+  .. math::
+      m_{\mathrm{c}} = \frac{\hbar^2}{2\pi} \qty(\pdv{A(E)}{E})_{E=E_{\mathrm{F}}}
+  
+  and (for 2D electron systems)
+
+  .. math::
+      A(E_{\mathrm{F}}) = \pi k_{\mathrm{F}}^2 = \frac{ \pi E_{\mathrm{F}}^2 }{ (\hbar v_{\mathrm{F}})^2 },
+
+  we find
+
+  .. math::
+      m_{\mathrm{c}} = \frac{\hbar k_{\mathrm{F}}}{v_{\mathrm{F}}}.
+* Relaxation time and mobility: :math:`T_{\mathrm{D}}` may be obtained by data fitting and hence :math:`\tau`. Electron mobility is given by
+  
+  .. math::
+      \mu_{\mathrm{s}}^{\mathrm{SdH}} = \frac{e\tau}{m_{\mathrm{c}}} = \frac{e\ell^{\mathrm{SdH}}}{\hbar k_{\mathrm{F}}}
+
+  where
+  
+  .. math::
+      \ell^{\mathrm{SdH}} = v_{\mathrm{F}} \tau.

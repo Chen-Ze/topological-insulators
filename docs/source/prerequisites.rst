@@ -54,6 +54,108 @@ Topology
   .. math::
       \operatorname{Pf}[A]^2 = \det[A].
 
+Semiclassical Theory of Electron Transport
+---------------------------------------------
+
+* :math:`\tau` denotes the relaxation time.
+* Scattering probability in interval :math:`\dd{t}` is given by :math:`\dd{t}/\tau`.
+* Time evolution of an electron of velocity :math:`\vb{v}(t)` at time :math:`\vb{v}(t)`:
+  
+  * Without scattering:
+
+    .. math::
+        \langle \vb{v}(t+\dd{t}) \rangle = \vb{v}(t) + \frac{\vb{f}(t)}{m^*} \dd{t}.
+  * With scattering:
+    
+    .. math::
+        \langle \vb{v}(t+\dd{t}) \rangle = 0.
+  * Overall:
+
+    .. math::
+        \langle \vb{v}(t+\dd{t}) \rangle = \qty(1 - \frac{\dd{t}}{\tau}) \qty( {\vb{v}(t) + \frac{\vb{f}(t)}{m^*} \dd{t}} ).
+* Equation of motion:
+
+  .. math::
+      m^* \qty({\dv{\vb{v}(t)}{t} + \frac{\vb{v}(t)}{\tau}}) \approx \vb{f}(t).
+* Lorentz force law:
+  
+  .. math::
+      \dv{\vb{v}(t)}{t} + \frac{\vb{v}(t)}{\tau} \approx -\frac{e}{m^*} \qty( \vb{E} + \frac{1}{c} \vb{v} \times \vb{B} ).
+* Stationary state, with :math:`\vb{B}` along :math:`z`-axis:
+  
+  .. math::
+      \begin{cases}
+          v_x + \omega_c \tau v_y = -(e\tau/m^*) E_x, \\
+          v_y - \omega_c \tau v_x = -(e\tau/m^*) E_y, \\
+          v_z = -(e\tau / m^*) E_z.
+      \end{cases}
+* Solution:
+  
+  .. math::
+      \begin{cases}
+          \displaystyle J_x = \frac{ne^2\tau}{m^*} \frac{E_x - \omega_c \tau E_y}{1+(\omega_c \tau)^2}, \\
+          \displaystyle J_y = \frac{ne^2\tau}{m^*} \frac{E_y + \omega_c \tau E_x}{1+(\omega_c \tau)^2}, \\
+          \displaystyle J_z = \frac{ne^2\tau}{m^*}E_z,
+      \end{cases}
+  where
+
+  .. math::
+      J = -n(e/c)\vb{v}.
+* Solution on the :math:`xy`-plane:
+  
+  .. math::
+      \begin{pmatrix} J_x \\ J_y \end{pmatrix} = \frac{\sigma_0}{1+(\omega_c \tau)^2} \begin{pmatrix} 1 & -\omega_c \tau \\ \omega_c \tau & 1 \end{pmatrix} \begin{pmatrix} E_x \\ E_y \end{pmatrix},
+  where
+
+  .. math::
+      \sigma_0 = \frac{ne^2 \tau}{m^*}.
+* Conductivity tensor:
+  
+  .. math::
+      \sigma_{xx} &= \sigma_{yy} = \frac{1}{1+(\omega_c \tau)^2} \sigma_0, \\
+      \sigma_{xy} &= -\sigma_{yx} = \frac{-\omega_c \tau}{1+(\omega_c \tau)^2} \sigma_0.
+
+SdH Oscillation
+^^^^^^^^^^^^^^^^^^^^^
+
+* :math:`B` very large, :math:`\omega_c \tau \gg 1`,
+  
+  .. math::
+      \sigma_{xx} &\approx \frac{ne^2}{m^* \omega_c^2 \tau} = \frac{nm^* c^2}{B^2 \tau}, \\
+      \sigma_{xy} &\approx \frac{ne^2}{m^* \omega_c} = \frac{nec}{B}.
+* Lifshitz-Kosevich theory: oscillation of :math:`\sigma_{xx}` is given by
+
+  .. math::
+      \Delta \sigma_{xx} \propto \cos \qty[ 2\pi\qty(\frac{F}{B} - \frac{1}{2} + \beta)],
+  where :math:`F` is the frequency of oscillation, and :math:`2\pi \beta` is the Berry phase of every cycle of motion.
+
+  * :math:`\beta = 1/2` for Dirac fermions.
+  * Item in the :math:`\cos` originates from
+    
+    .. math::
+        A_N = \frac{2\pi e}{\hbar c} B\qty(N + \frac{1}{2} - \beta),
+    i.e. the area in the :math:`\vb{k}`-space encircled by the closed path of electron motion.
+
+Conductivity and Resistivity Tensor
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. math::
+    \begin{pmatrix} \rho_{xx} & \rho_{xy} \\ \rho_{yx} & \rho_{xx} \end{pmatrix} = \frac{1}{\sigma^2_{xx} + \sigma^2_{xy}} \begin{pmatrix} \sigma_{xx} & \sigma_{xy} \\ \sigma_{yx} & \sigma_{xx} \end{pmatrix}.
+
+* If :math:`\sigma_{xy} = 0`,
+  
+  .. math::
+      \rho_{xx} = \frac{1}{\rho_{xx}}.
+* If :math:`\abs{\sigma_{xx}} \ll \abs{\sigma_{xy}}`,
+  
+  .. math::
+      \rho_{xx} = \frac{\sigma_{xx}}{\sigma_{xy}^2}.
+
+  * This is the case in strong magnetic field:
+  
+    .. math::
+        \abs{\sigma_{xx}} \ll \abs{\sigma_{xy}} \Longleftrightarrow \omega_c\tau \gg 1.
+
 Glossary
 ----------
 
