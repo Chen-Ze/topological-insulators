@@ -61,7 +61,7 @@ Candidates of 2D Topological Materials
 * Monolayer :math:`\ce{Na2IrO3}`.
 * Vapor deposition of metal atoms onto graphene.
   
-  * Spin-orbital interaction enhanced.
+  * Spin-orbit interaction enhanced.
 * Silicene: existence in isolation not proven.
 
 Remark: Why is Two-Dimensional More Preferable?
@@ -251,14 +251,22 @@ Topological semimetals may refer two three kinds of materials.
 Weyl Semimetals
 ^^^^^^^^^^^^^^^^^^^^
 
+.. raw:: html
+
+    <img class="block-center" width="360" src="https://www.researchgate.net/profile/Binghai-Yan/publication/281312307/figure/fig2/AS:316963344666635@1452581358627/Schematics-of-the-topological-insulator-and-Weyl-semimetal-a-A-TI-exhibits-an-energy.png"/>
+
+.. rst-class:: text-center
+
+    From `Topological surface states and Fermi arcs of the noncentrosymmetric Weyl semimetals TaAs, TaP, NbAs, and NbP <https://www.researchgate.net/publication/281312307_Topological_surface_states_and_Fermi_arcs_of_the_noncentrosymmetric_Weyl_semimetals_TaAs_TaP_NbAs_and_NbP>`_
+
 * Chirality as a good quantum number.
 * Massless Dirac equation: Dirac equation diagonalized into two :math:`2\times 2`-blocks of each chirality.
 * Inversion symmetry or TRS broken: spin-degeneracy lifted.
-* At intersections of conduction bands and valance bands (i.e. Weyl points): Hamiltonian (:math:`\pm` depending on chirality)
-* Weyl points exist in pair of opposite chiralities.
+* At intersections of conduction bands and valance bands (i.e. Weyl points): Hamiltonian (:math:`\pm` depending on the chirality)
 
   .. math::
       H = \pm \hbar v_{\mathrm{F}} \vb*{\sigma}\cdot \vb{k}.
+* Weyl points exist in pair of opposite chiralities.
 * A Weyl point pair is joined by a Dirac arc, projection of which onto the 2D BZ surface gives gapless surface state.
 
 Candidates of Topological Semimetals
@@ -292,7 +300,7 @@ SnTe
 SnSe
 ^^^^^^^^^
 
-* :math:`\ce{Pb_{0.77}Sn_{0.23}Se}`: trivial insulator at RT while topological at :math:`T` goes down, where spin-orbital interaction increases due to lattice shrinking.
+* :math:`\ce{Pb_{0.77}Sn_{0.23}Se}`: trivial insulator at RT while topological at :math:`T` goes down, where spin-orbit interaction increases due to lattice shrinking.
 
 Synthesization
 ------------------

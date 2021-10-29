@@ -183,7 +183,7 @@ Weak Antilocalization
   * Positive magnetoresistance of cusp shape because magnetic field breaks TRS and hence the interference.
 
 .. warning::
-    Weak antilocalization may also be caused by strong spin-orbital coupling. Therefore, this phenomenon is not limited to Dirac systems.
+    Weak antilocalization may also be caused by strong spin-orbit coupling. Therefore, this phenomenon is not limited to Dirac systems.
 
 * Magnetoresistance from antilocalization: Hikami-Larkin-Nagaoka equation
   

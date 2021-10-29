@@ -18,7 +18,7 @@ Candidates of Topological Superconductors
 * :math:`\ce{Cu_xBi2Se3}` (doped :math:`\ce{Bi2Se3}`).
 * :math:`\ce{Sn_{1-x}In_xTe}` (doped topological crystalline insulator :math:`\ce{SnTn}`).
   
-  * Strong spin-orbital interaction couples electrons of different parities into Cooper pairs.
+  * Strong spin-orbit interaction couples electrons of different parities into Cooper pairs.
 
 Majorana Fermions
 ------------------------

@@ -19,6 +19,7 @@ Contents
    thouless-pump.ipynb
    fu-kane-pump.ipynb
    1d-topological-insulator.ipynb
+   2d-topological-insulator.ipynb
    topological-materials
    properties
    computation

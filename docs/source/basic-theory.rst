@@ -450,6 +450,14 @@ Inversion Symmetry
   .. note::
       We need an odd number of points of odd parity in the :math:`4N` :math:`\xi_{2n}`'s to have a nontrivial topology.
 
+.. warning::
+    SO interaction like :math:`\vb{k} \cdot \vb*{\sigma}` breaks inversion symmetry (there are two distinct energy levels at each :math:`\vb{k}`). Moreover, it disqualifies :math:`s_z` as a good quantum number.
+
+    However, it is **not true that all SO interactions break inversion symmetry**. In the BHZ model, there is SO interaction term (coupling between :math:`\vb{k}` and :math:`\vb*{\sigma}`). However, in that case the inversion symmetry was not broken. Otherwise we could not have been able to apply the formula yielding :math:`\mathbb{Z}_2` index using parities at TRIMs.
+
+.. note::
+    SO interaction is necessary to maintain a nonzero gap everywhere [Kane2007]_.
+
 Remark: Why Does TRS Matter?
 --------------------------------
 
@@ -474,6 +482,29 @@ Mirror Chern Number
   where :math:`\nu_{\pm 1}` are the Chern numbers of the subspaces with eigenvalue :math:`\pm 1` under :math:`m`.
 * Mirror chirality: for 3D systems with :math:`\nu_0 = 1`, :math:`\nu_{\mathcal{M}} = \pm 1` and therefore defines the mirror chirality.
 
+Miscellaneous Effects
+------------------------
+
+Spin-Orbit Coupling
+^^^^^^^^^^^^^^^^^^^^^^
+
+Rashba Effect
+""""""""""""""
+
+* The Rashba spin-orbit coupling is typical for systems with uniaxial symmetry, or due to the spatial inhomogeneity of an interface or surface.
+  
+  .. math::
+      H_{\mathrm{R}} = \alpha_{\mathrm{R}}(\vb*{\sigma}\times \vb{p})\cdot \hat{\vb*{z}}.
+
+Dresselhaus Effect
+""""""""""""""""""""
+
+* In 2D systems, the Dresselhaus Hamiltonian can be separated into a linear and a cubic term. The linear Dresselhaus Hamiltonian is usually written as
+
+  .. math::
+      H^{(1)}_{\mathrm{D}} = \frac{\beta}{\hbar} (\sigma_x p_x - \sigma_y p_y).
+* Dresselhaus and Rashba effects are often of similar strength in the band splitting of GaAs nanostructures.
+
 Glossary
 -----------
 
@@ -485,3 +516,4 @@ References
 -------------
 
 .. [Shen2012] `Topological Insulators <https://link.springer.com/book/10.1007/978-3-642-32858-9>`_
+.. [Kane2007] `Topological insulators with inversion symmetry <https://journals.aps.org/prb/abstract/10.1103/PhysRevB.76.045302>`_

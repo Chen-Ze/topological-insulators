@@ -30,7 +30,7 @@ Index of Models (Diagonalizable)
      - N/A
      - N/A
    * - Su-Schrieffer-Heeger Model [Su1979]_
-     - 1D TI
+     - `1D TI <./1d-topological-insulator.html>`_
      - 1
      - Spinless
      - N/A
@@ -41,6 +41,12 @@ Index of Models (Diagonalizable)
      - Broken
      - N/A
      - Not yet found [Yu2010]_
+   * - Kane-Mele Model [Kane2005]_
+     - `2D TI (QSHE) <./2d-topological-insulator.html>`_
+     - 2
+     - Preserved
+     - N/A
+     - Too small in Graphene
    * - BHZ Model [Bernevig2006]_
      - 2D TI
      - 2
@@ -154,6 +160,35 @@ Su-Schrieffer-Heeger Model
     .. math::
         E_\pm = \pm\sqrt{d_x^2 + d_z^2}.
 
+QAHE (Haldane Model)
+--------------------------
+
+.. image:: https://badgen.net/badge/TRS/broken/red
+.. image:: https://badgen.net/badge/Dimension/2D/orange
+
+.. hint::
+    Yet to be done.
+
+QSHE (Kane-Mele Model)
+--------------------------
+
+.. image:: https://badgen.net/badge/TRS/preserved/green
+.. image:: https://badgen.net/badge/Dimension/2D/orange
+
+.. hint::
+    Yet to be done.
+
+* Boundary could be zig-zag, armchair -- you name it.
+
+  .. rst-class:: block-center max-w100
+
+      .. image:: https://www.nanowerk.com/nanotechnology-news/id42950_1.jpg
+
+  .. rst-class:: text-center
+
+      From `Graphene nanoribbons: it's all about the edges <https://www.nanowerk.com/nanotechnology-news/newsid=42950.php>`_
+* See `Kane-Mele Model <https://chaoli.club/index.php/4485/0>`_ for bulk band structure.
+
 Bernevig-Hughes-Zhang Model
 --------------------------------
 
@@ -261,6 +296,8 @@ A few models that are not mentioned above.
 
 * The QWZ (Qi-Wu-Zhang) model. See `二维陈绝缘体(2D Chern Insulator)：Qi-Wu-Zhang（QWZ）模型 <https://zhuanlan.zhihu.com/p/55005395>`_.
 
+See `能带推导复习 - 泰勒猫爱丽丝的文章 - 知乎 <https://zhuanlan.zhihu.com/p/359578693>`_ for calculation procedures.
+
 References
 -------------
 
@@ -271,3 +308,4 @@ References
 .. [Su1979] `Solitons in Polyacetylene <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.42.1698>`_
 .. [Bernevig2006] `Quantum Spin Hall Effect and Topological Phase Transition in HgTe Quantum Wells <https://www.science.org/doi/abs/10.1126/science.1133734>`_
 .. [König2007] `Quantum Spin Hall Insulator State in HgTe Quantum Wells <https://www.science.org/doi/abs/10.1126/science.1148047>`_
+.. [Kane2005] `Quantum Spin Hall Effect in Graphene <https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.95.226801>`_
