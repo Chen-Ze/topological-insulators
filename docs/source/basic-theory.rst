@@ -499,11 +499,28 @@ Rashba Effect
 Dresselhaus Effect
 """"""""""""""""""""
 
+* Occurs when inversion symmetry is broken.
 * In 2D systems, the Dresselhaus Hamiltonian can be separated into a linear and a cubic term. The linear Dresselhaus Hamiltonian is usually written as
 
   .. math::
       H^{(1)}_{\mathrm{D}} = \frac{\beta}{\hbar} (\sigma_x p_x - \sigma_y p_y).
 * Dresselhaus and Rashba effects are often of similar strength in the band splitting of GaAs nanostructures.
+
+Localization
+^^^^^^^^^^^^^^^^
+
+Weak Localization
+""""""""""""""""""""
+
+* Occurs in disordered electronic systems at very low temperatures.
+* Increases resistivity.
+* Originates from interference of electrons propagating clockwise and counter-clockwise.
+
+Anderson Localization
+""""""""""""""""""""""""
+
+* Also known as strong localization.
+* The absence of diffusion of waves in a disordered medium.
 
 Glossary
 -----------
