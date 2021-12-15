@@ -195,6 +195,11 @@ Determination of 3D Topological Insulators
 .. warning::
     Since charge accumulation may occur at surface and may create a conductive layer, the dependence of resistivity versus sample size does not confirm the existence of topological surface states.
 
+CD-ARPES
+^^^^^^^^^^^
+
+* CD (Circular dichroism)-ARPES showing CR (circularly polarized right)-CL (circularly polarized left) difference spectrum may indicates non-degenerate spin configurations.
+
 Glossary
 ----------
 

@@ -278,6 +278,14 @@ Candidates of Topological Semimetals
 * Layers of :math:`\ce{HgTe}/\ce{CdTe}` with electric field applied.
 * MBE growth of :math:`\ce{Tl-Se-Bi-S}` multi-layers.
 
+Heusler Compounds as Topological Semimetals
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+* Topological semimetal :math:`\ce{LuPtBi}` and :math:`\ce{YPtBi}` confirmed [Liu2016]_.
+  
+  * Dirac point ~0.5eV below :math:`E_{\mathrm{F}}`.
+  * Non-degenerate spin configuration confirmed by CD-ARPES.
+
 Topological Crystalline Insulator
 ------------------------------------
 
@@ -386,3 +394,4 @@ References
 .. [Hsieh2012] `Topological crystalline insulators in the SnTe material class <https://www.nature.com/articles/ncomms1969>`_
 .. [Tanaka2012] `Experimental realization of a topological crystalline insulator in SnTe <https://www.nature.com/articles/nphys2442>`_
 .. [Dziawa2012] `Topological crystalline insulator states in Pb1−xSnxSe <https://www.nature.com/articles/nmat3449>`_
+.. [Liu2016] `Observation of unusual topological surface states in half-Heusler compounds LnPtBi (Ln=Lu, Y) <https://www.nature.com/articles/ncomms12924>`_

@@ -298,6 +298,8 @@ A few models that are not mentioned above.
 
 See `能带推导复习 - 泰勒猫爱丽丝的文章 - 知乎 <https://zhuanlan.zhihu.com/p/359578693>`_ for calculation procedures.
 
+See `如何理解量子霍尔效应？ - 泰勒猫爱丽丝的回答 - 知乎 <https://www.zhihu.com/question/47547396/answer/1721761565>`_ for a brief introduction of QSHE.
+
 References
 -------------
 

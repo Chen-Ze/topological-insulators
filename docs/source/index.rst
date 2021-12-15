@@ -24,6 +24,7 @@ Contents
    properties
    computation
    topological-superconductors
+   applications
 
 Maintenance
 -------------

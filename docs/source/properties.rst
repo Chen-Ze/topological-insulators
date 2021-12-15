@@ -94,6 +94,12 @@ Fan Diagram
 .. warning::
     :math:`\sigma_{xx} \ll \abs{\sigma_{xy}}` may not hold in experiment condition. It's more reliable to find minima based on :math:`\sigma_{xy}` instead of :math:`\rho_{xy}`.
 
+Temperature Dependency of Oscillation Frequencies
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+* Fan diagrams may not be able to tell apart the :math:`\pi` phase shift due to SOC and Dirac cone.
+* The slop of the :math:`T^2`-temperature dependency of  oscillation frequency may be able to tell these cases apart [Guo2021]_.
+
 More Information from SdH Oscillation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -238,7 +244,7 @@ Magnetism
 Quantum Anomalous Hall Effect
 --------------------------------
 
-* QAHE found in :math:`\ce{Cr}`\ -doped :math:`\ce{(Bi,Sb)_2Te3}` thin film and :math:`\ce{Mn}`\ -doped :math:`\ce{Bi2(Se,Te)3}` thin film.
+* QAHE found in :math:`\ce{Cr}`\ -doped :math:`\ce{(Bi,Sb)_2Te3}` thin film and :math:`\ce{Mn}`\ -doped :math:`\ce{Bi2(Se,Te)3}` thin film [Chang2013]_.
   
   * Magnetism of doping ions breaks TRS and therefore creates gap at Dirac point.
   * Hence one-dimensional edge states created.
@@ -330,3 +336,10 @@ Optics
 * Floquet-Bloch state: periodic pattern of :math:`E`\ -axis of the Dirac cone with quasi-equilibrium eigenstates.
 
   * Observable using pump-probe ARPES.
+
+
+References
+-------------
+
+.. [Guo2021] `Temperature dependence of quantum oscillations from non-parabolic dispersions <https://www.nature.com/articles/s41467-021-26450-1>`_
+.. [Chang2013] `Experimental Observation of the Quantum Anomalous Hall Effect in a Magnetic Topological Insulator <https://www.science.org/doi/10.1126/science.1234414>`_
